@@ -4,7 +4,7 @@ layout: default
 
 ## About Me
 
-<img class="profile-picture" src="sherlock.jpg">
+<img class="profile-picture" src="1234567.jpeg">
 
 I am a computational neuroscientist interested in developing experimentally motivated, mathematically grounded theories of neural systems. I am currently a PhD student in the [Center for Theoretical Neuroscience](https://ctn.zuckermaninstitute.columbia.edu/) at Columbia University.
 
