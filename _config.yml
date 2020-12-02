@@ -1,6 +1,6 @@
 title: Jacob Portes
 url: "https://jacobfulano.github.io"
-baseurl: "/jacobfulano.github.io"
+baseurl: "/"
 
 markdown: kramdown
 #ins_logo: "./bits-logo.png"
