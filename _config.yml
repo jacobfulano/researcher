@@ -1,5 +1,5 @@
 title: Researcher
-url: "https://jacobfulano.github.io"
+url: "https://ankitsultana.com"
 baseurl: "/researcher"
 
 markdown: kramdown
@@ -8,8 +8,8 @@ markdown: kramdown
 tracking_id: #
 
 footer: yes
-footer_url: "https://github.com/jacobfulano"
-#footer_text: "Page design by Ankit Sultana"
+footer_url: "https://github.com/ankitsultana"
+footer_text: "Page design by Ankit Sultana"
 
 sass:
     style: compressed
@@ -18,7 +18,7 @@ sass:
 nav:
  - name: "About"
    link: "/researcher/"
- # - name: "Resume"
- #   link: "resume.pdf"
+ - name: "Resume"
+   link: "resume.pdf"
  - name: "Contact"
    link: "contact"
