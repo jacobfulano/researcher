@@ -1,5 +1,5 @@
-title: Researcher
-url: "https://ankitsultana.com"
+title: Jacob Portes
+url: "https://jacobfulano.github.io"
 baseurl: "/jacobfulano.github.io"
 
 markdown: kramdown
@@ -7,9 +7,9 @@ markdown: kramdown
 
 tracking_id: #
 
-footer: yes
-footer_url: "https://github.com/ankitsultana"
-footer_text: "Page design by Ankit Sultana"
+footer: no # or yes
+#footer_url: "https://github.com/ankitsultana"
+#footer_text: "Page design by Ankit Sultana"
 
 sass:
     style: compressed
@@ -18,7 +18,11 @@ sass:
 nav:
  - name: "About"
    link: "/jacobfulano.github.io/"
- - name: "Resume"
-   link: "resume.pdf"
+ - name: "Research"
+   link: "research"
+ - name: "Teaching"
+   link: "teaching"
+ # - name: "Resume"
+ #   link: "resume.pdf"
  - name: "Contact"
    link: "contact"
