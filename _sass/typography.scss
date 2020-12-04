@@ -48,7 +48,7 @@
             margin: 0;
         }
         @media (max-width: $small-width) {
-            float: none;
+            float: none; // for small screen centers in middle
             img {
                 margin-top: -5px;
             }
