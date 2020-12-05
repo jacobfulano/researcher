@@ -26,5 +26,5 @@ nav:
    link: "notes"
  # - name: "Resume"
  #   link: "resume.pdf"
- - name: "Contact"
-   link: "contact"
+ - name: "Code"
+   link: "code"
