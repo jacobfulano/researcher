@@ -35,6 +35,8 @@ We also notice that there is no need for a summation symbol when using Einstein 
 #### Matrix-Vector
 
 Let $\mathbf{v}$ be a column vector size $N \times 1$, and matrix $\mathbf{A}$ size $M \times N$. The following operations will return a vector:
+
+
 | | Index Notation | Summation Notation | Returns |
 | --- | --- | --- | --- |
 | $\mathbf{A}\mathbf{v}$ | $\sum_j A_{ij} v_j = (\mathbf{Av})_i$ | $A^i_j v^j$ | column vector |
@@ -84,11 +86,6 @@ The rest of these notes will use this numerator notation.
 
 How do we arrive at this second result unambiguously?
 
-Another way to think of this:
-
-The gradient of a scalar field $\phi(x_1,\dots,x_n)$
-
-$$ \frac{\partial \phi}{\partial x_i} = \partial_i \phi = \nabla \phi = \Big[  \frac{\partial \phi}{\partial x_1}, \frac{\partial \phi}{x_2}, \dots, \frac{\partial \phi}{\partial x_n} \Big]$$
 
 
 
@@ -157,30 +154,30 @@ $$
 \tau \frac{dh_i(t)}{dt} = -h_i(t) + \phi \Big( \sum_k W_{ik}h_k(t) \Big) + \eta_i(t)
 $$
 
-Suppose we want to linearize about the fixed point $\mathbf{h}^*$. Let $\mathbf{h} = \mathbf{h}^* + \delta \mathbf{h}$
+Suppose we want to linearize about the fixed point $\mathbf{h}^\*$. Let $\mathbf{h} = \mathbf{h}^* + \delta \mathbf{h}$
 
 
 $$
-\phi(\mathbf{W}(\mathbf{h}^* + \delta \mathbf{h})) \approx \phi(\mathbf{W}\mathbf{h}^*) + \mathbf{\phi'}(\mathbf{W}\mathbf{h}^*) \odot (\mathbf{W} \delta\mathbf{ h} )
+\phi(\mathbf{W}(\mathbf{h}^* + \delta \mathbf{h})) \approx \phi(\mathbf{W}\mathbf{h}^\*) + \mathbf{\phi'}(\mathbf{W}\mathbf{h}^*) \odot (\mathbf{W} \delta\mathbf{ h} )
 $$
 
 Using index notation, this would be
 
 $$
-\phi \Big( \sum_k W_{ik} (h^*_k + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h^*_k \Big) + \phi' \Big( \sum_k W_{ik} h^*_k \Big)  \sum_k W_{ik} \delta h_k
+\phi \Big( \sum_k W_{ik} (h^\*\_k + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h^\*\_k \Big) + \phi' \Big( \sum_k W_{ik} h^*\_k \Big)  \sum_k W_{ik} \delta h_k
 $$
 
 Plugging this back into the RNN equation, we get
 
 $$
-\tau \frac{d}{dt}(\mathbf{h}^*+\delta \mathbf{h}) = -(\mathbf{h}^*+\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
+\tau \frac{d}{dt}(\mathbf{h}^\*+\delta \mathbf{h}) = -(\mathbf{h}^\*+\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
 $$
 
 $$
-\tau \frac{d}{dt}(\delta \mathbf{h}) = -\delta \v{h} - \mathbf{h}^* + \mathbf{\phi}(\mathbf{Wh}^*) + \mathbf{\phi'}(\mathbf{Wh}^*) \odot (\mathbf{W} \delta\mathbf{h})  + \mathbf{\eta}(t)
+\tau \frac{d}{dt}(\delta \mathbf{h}) = -\delta \v{h} - \mathbf{h}^* + \mathbf{\phi}(\mathbf{Wh}^\*) + \mathbf{\phi'}(\mathbf{Wh}^*) \odot (\mathbf{W} \delta\mathbf{h})  + \mathbf{\eta}(t)
 $$
 
-Note that $-\mathbf{h}^*$ is *not* cancelled by the term $\mathbf{\phi}(\mathbf{Wh}^*)$.
+Note that $-\mathbf{h}^\*$ is *not* cancelled by the term $\mathbf{\phi}(\mathbf{Wh}^*)$.
 
 
 
