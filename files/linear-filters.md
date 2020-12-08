@@ -16,7 +16,7 @@ Many different systems can be thought of as filters, and formal filter analysis/
 \caption{Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)}
 \end{figure}
 
-{% include image.html url="/files/lowpasshighpass.jpg" description="Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)" %}
+
 
 ![lowpass](/files/lowpasshighpass.jpg)
 
