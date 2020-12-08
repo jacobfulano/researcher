@@ -48,10 +48,10 @@ However, once we introduce something like a static nonlinearity, we have to be v
 
 What this tells us essentially is that if we use Gaussian (white) noise as stimulus input, we can still extract a linear filter for our system despite having a nonlinearity. What this means in practice is that in order to extract a linear filter from a biological cell which we are approximating using the Linear-Nonlinear framework, we need the stimulus input to be Gaussian (white) noise.
 
-Mathematically speaking, we have a model $r'=N(F*s)$ and the experimentally observed response $r$ and zero-mean stimulus $s$ (note the difference between model prediction $r'$ and experimental data $r$).  We want to find the filter $F$ that best fits the model.  On the assumption that the model is  true (that $r$ is really generated as $N(F*s)$), Bussgang's theorem allows us to find $F$ up to a constant of  proportionality, regardless of the nonlinearity $N$, when $s$ is Gaussian. The theorem states, for $s$  a mean zero Gaussian with variance $\sigma^2$,
+Mathematically speaking, we have a model $r'=N(F\*s)$ and the experimentally observed response $r$ and zero-mean stimulus $s$ (note the difference between model prediction $r'$ and experimental data $r$).  We want to find the filter $F$ that best fits the model.  On the assumption that the model is  true (that $r$ is really generated as $N(F*s)$), Bussgang's theorem allows us to find $F$ up to a constant of  proportionality, regardless of the nonlinearity $N$, when $s$ is Gaussian. The theorem states, for $s$  a mean zero Gaussian with variance $\sigma^2$,
 
 \begin{equation}
-\langle sN(Fs) \rangle= F {\langle ss \rra} \langle \frac{d}{ds} N(Fs) \rangle
+\langle sN(Fs) \rangle= F {\langle ss \rangle} \langle \frac{d}{ds} N(Fs) \rangle
 \end{equation}
 
 Substituting $r'=N(Fs)$ in the left side of the equation, this gives
@@ -82,9 +82,9 @@ $$ \tilde{r}(\omega) = \tilde{F}(\omega) * \tilde{s}(\omega)$$
 
 We therefore arrive at the method used in Baccus et al. 2002 and Behnia et al. 2014 (see the method sections of these papers). Linear filters in both of these papers were extracted by computing the following in Fourier space:
 
-$$ \tilde{F}(\omega) = \frac{\lla \tilde{r}(\omega) \tilde{s}(\omega) \rra}{\lla \tilde{s}(\omega) \tilde{s}(\omega) \rra}  = \frac{\tilde{C}_{rs}}{\tilde{C}_{ss}}$$
+$$ \tilde{F}(\omega) = \frac{\langle \tilde{r}(\omega) \tilde{s}(\omega) \rangle}{\langle \tilde{s}(\omega) \tilde{s}(\omega) \rangle}  = \frac{\tilde{C}\_{rs}}{\tilde{C}_{ss}}$$
 
-where $\tilde{C}_{rs}$ is the covariance between stimulus and response, and $\tilde{C}_{ss}$ is the autocovariance of the stimulus. Note that this uses Bussgang's theorem, as above.
+where $\tilde{C}\_{rs}$ is the covariance between stimulus and response, and $\tilde{C}_{ss}$ is the autocovariance of the stimulus. Note that this uses Bussgang's theorem, as above.
 
 
 
@@ -94,7 +94,7 @@ where $\tilde{C}_{rs}$ is the covariance between stimulus and response, and $\ti
 
 ## Filters in Vision Neuroscience
 
-The following example from Baccus and Meister 2002 is particularly illustrative. In this study, they attempted to characterize the adaptive properties of the salamander retina to changing visual contrast. They recorded intracellularly from bipolar cells, amacrine cells and ganglion cells in the retina, and extracted filtering properties for each cell type based on the input stimulus. Among other things, they were able to show \textit{which} cells adapted to contrast changes and which cells didn't, based on their filtering analysis. The way they did this was straightforward - they extracted filters for each cell before and after the stimuli changed contrast, and compared them. Cells that adapted to contrast had different filters before and after, while cells that did not adapt to contrast had filters that remained the same.
+The following example from Baccus and Meister 2002 is particularly illustrative. In this study, they attempted to characterize the adaptive properties of the salamander retina to changing visual contrast. They recorded intracellularly from bipolar cells, amacrine cells and ganglion cells in the retina, and extracted filtering properties for each cell type based on the input stimulus. Among other things, they were able to show *which* cells adapted to contrast changes and which cells didn't, based on their filtering analysis. The way they did this was straightforward - they extracted filters for each cell before and after the stimuli changed contrast, and compared them. Cells that adapted to contrast had different filters before and after, while cells that did not adapt to contrast had filters that remained the same.
 
 The stimulus was a rapidly flickering uniform field whose light intensity changed randomly every 30 ms. They describe the method in the paper as follows:
 
@@ -136,4 +136,4 @@ They explain:
 
 3. Chichilnisky, E. J. (2001). A simple white noise analysis of neuronal light responses. Network: Computation in Neural Systems, 12(2), 199-213.
 
-4.  Smith, S. W. (1997). The scientist and engineer's guide to digital signal processing. \url{http://www.dspguide.com/}
+4.  Smith, S. W. (1997). The scientist and engineer's guide to digital signal processing. <http://www.dspguide.com/>
