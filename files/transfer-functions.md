@@ -30,9 +30,8 @@ Phase of a complex number $ z = a + j \omega$
 \angle z = \arctan(\omega/a)
 \end{equation}
 
-first order filters, second order filters (what they are, and why).
 
-Gain is often plotted as $\log_{10}(|G(j\omega)|)$
+Gain is often plotted as $\log_{10}(\|G(j\omega)\|)$
 
 $360\degree = 2 \pi $ radians, so $1\degree = \pi/180$ radians and 1 radian $ = 180/\pi = 57.29577 \degree$
 
