@@ -33,7 +33,7 @@ Phase of a complex number $ z = a + j \omega$
 
 Gain is often plotted as $\log_{10}(\|G(j\omega)\|)$
 
-$360\degree = 2 \pi$ radians, so $1\degree = \pi/180$ radians and 1 radian $= 180/\pi = 57.29577 \degree$
+$360^{\circ} = 2 \pi$ radians, so $1^{\circ} = \pi/180$ radians and 1 radian $= 180/\pi = 57.29577 ^{\circ}$
 
 Here is a quick reference on transfer functions: <https://web.njit.edu/~levkov/classes_files/ECE232/Handouts/Frequency\%20Response.pdf>
 
@@ -108,9 +108,9 @@ $$ H(s) = \frac{a}{(s+a)^2}$$
 
 and the magnitude is
 
-$$|H(s)| = \frac{a}{(\omega^2 + a^2)}$$
+$$\|H(s)\| = \frac{a}{(\omega^2 + a^2)}$$
 
-However, this does not seem to *normalize* the response, so there is a simple gain effect at low frequencies from the amplitude itself. We can normalize the gain by taking $\omega \rightarrow 0$ and fixing $|H(s)| = 1$:
+However, this does not seem to *normalize* the response, so there is a simple gain effect at low frequencies from the amplitude itself. We can normalize the gain by taking $\omega \rightarrow 0$ and fixing $\|H(s)\| = 1$:
 
 $$f(t) = a^2 t \cdot e^{-at} \rightarrow |H(s)| = \frac{a^2}{(\omega^2 + a^2)}$$
 
