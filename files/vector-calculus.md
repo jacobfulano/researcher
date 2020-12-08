@@ -16,6 +16,8 @@ $$ \mathbf{v} = v_j = \begin{bmatrix}
            \vdots \\
            v_{N}
          \end{bmatrix}$$
+
+
 where $j$ is a "free index," and row vectors as $\mathbf{v}^\top$. Einstein summation notation makes this distinction clear by defining $v^j$ as a (column) **vector** and $v_j$ as a (row) **covector** (a.k.a dual vectors).
 
 ## 1. Operations
