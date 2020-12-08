@@ -33,7 +33,7 @@ Phase of a complex number $ z = a + j \omega$
 
 Gain is often plotted as $\log_{10}(\|G(j\omega)\|)$
 
-$360\degree = 2 \pi $ radians, so $1\degree = \pi/180$ radians and 1 radian $ = 180/\pi = 57.29577 \degree$
+$360\degree = 2 \pi$ radians, so $1\degree = \pi/180$ radians and 1 radian $= 180/\pi = 57.29577 \degree$
 
 Here is a quick reference on transfer functions: <https://web.njit.edu/~levkov/classes_files/ECE232/Handouts/Frequency\%20Response.pdf>
 
@@ -50,8 +50,6 @@ is
 $$ H(s) = \frac{1}{s+1}$$
 
 The magnitude of the transfer function is given by:
-
-%$$ = \log|1| - \log|(j \omega + 1)| \rightarrow \log(1) - \log \sqrt{\omega^2 + 1^2}$$
 
 $$ |H(s)| = \frac{1}{\sqrt{(\omega^2 + 1)}}$$
 
@@ -110,17 +108,17 @@ $$ H(s) = \frac{a}{(s+a)^2}$$
 
 and the magnitude is
 
-$$ |H(s)| = \frac{a}{(\omega^2 + a^2)}$$
+$$|H(s)| = \frac{a}{(\omega^2 + a^2)}$$
 
-However, this does not seem to \textit{normalize} the response, so there is a simple gain effect at low frequencies from the amplitude itself. We can normalize the gain by taking $\omega \rightarrow 0$ and fixing $|H(s)| = 1$:
+However, this does not seem to *normalize* the response, so there is a simple gain effect at low frequencies from the amplitude itself. We can normalize the gain by taking $\omega \rightarrow 0$ and fixing $|H(s)| = 1$:
 
-$$ f(t) = a^2 t \cdot e^{-at} \rightarrow |H(s)| = \frac{a^2}{(\omega^2 + a^2)}$$
+$$f(t) = a^2 t \cdot e^{-at} \rightarrow |H(s)| = \frac{a^2}{(\omega^2 + a^2)}$$
 
 
 Does a better job - here there is no gratuitous gain change.
 
 The phase for both of these are is:
 
-$$ \angle \Big[ \frac{a}{(s+a)^2} \Big] \longrightarrow \frac{a^3 - a\omega^2}{(a^2 + \omega^2)^2} - j\frac{2a^2\omega}{(a^2 + \omega^2)^2} \longrightarrow \arctan\Big( \frac{-2a^2\omega}{a^3 - a\omega^2} \Big)$$
+$$\angle \Big[ \frac{a}{(s+a)^2} \Big] \longrightarrow \frac{a^3 - a\omega^2}{(a^2 + \omega^2)^2} - j\frac{2a^2\omega}{(a^2 + \omega^2)^2} \longrightarrow \arctan\Big( \frac{-2a^2\omega}{a^3 - a\omega^2} \Big)$$
 
-$$ \angle \Big[ \frac{a^2}{(s+a)^2} \Big] \longrightarrow \frac{a^4 - a^2\omega^2}{(a^2 + \omega^2)^2} - j\frac{2a^3\omega}{(a^2 + \omega^2)^2} \longrightarrow \arctan\Big( \frac{-2a^3\omega}{a^4 - a^2 \omega^2} \Big)$$
+$$\angle \Big[ \frac{a^2}{(s+a)^2} \Big] \longrightarrow \frac{a^4 - a^2\omega^2}{(a^2 + \omega^2)^2} - j\frac{2a^3\omega}{(a^2 + \omega^2)^2} \longrightarrow \arctan\Big( \frac{-2a^3\omega}{a^4 - a^2 \omega^2} \Big)$$
