@@ -41,10 +41,10 @@ which leads us to:
 \end{equation}
 
 Another way to derive this:
-\begin{enumerate}
-    \item Pixel intensities of an object do not change between consecutive frames
-    \item Neighbouring pixels have similar motion
-\end{enumerate}
+
+* Pixel intensities of an object do not change between consecutive frames
+* Neighbouring pixels have similar motion
+
 
 The under-constrained "Optical Flow equation" can be derived as follows. The above assumptions imply that:
 \begin{equation}
@@ -107,23 +107,19 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 ## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
 
-\begin{align}
-\begin{split}
-    E_L = L_1^2 + L_2^2 \\
-    E_R = R_1^2 + R_2^2
-\end{split}
-\end{align}
+
+$$ E_L = L_1^2 + L_2^2 $$
+$$ E_R = R_1^2 + R_2^2 $$
+
 
 Subtracting $E_L$ from $E_R$ gives the opponent energy:
-\begin{align}
-\begin{split}
-    E_O &= E_R - E_L \\
-     &= R_1^2 + R_2^2 - (L_1^2 + L_2^2) \\
-     &= (A-B')^2 + (B+A')^2 - (A+B')^2 - (B-A')^2 \\
-    &= A^2 + B^2 -2AB' + B^2 + A'^2 + 2A'B -(A^2 + B'^2 + 2AB') - (B^2 + A'2 - 2A'B) \\
-    E_O &= 4(A'B - AB')
-\end{split}
-\end{align}
+
+$$ E_O &= E_R - E_L $$
+$$ &= R_1^2 + R_2^2 - (L_1^2 + L_2^2) $$
+$$ &= (A-B')^2 + (B+A')^2 - (A+B')^2 - (B-A')^2 $$
+$$ &= A^2 + B^2 -2AB' + B^2 + A'^2 + 2A'B -(A^2 + B'^2 + 2AB') - (B^2 + A'2 - 2A'B) $$
+$$ E_O &= 4(A'B - AB') $$
+
 It is important to note that opponent energy does *not* estimate velocity, in part because it varies with contrast (how?)
 
 Adelson and Bergen (1985) noted that a veridical velocity estimation could be recovered if the opponent energy signal was divided by a "static energy" signal, AND the filters $A$,$B'$, $A'$ and $B$ are chosen carefully.
