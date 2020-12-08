@@ -4,7 +4,7 @@ layout: default
 
 ## Vision Neuroscience
 
-1. [Linear Filter Estimation](https://jacobfulano.github.io/files/linear-filters.md)
+1. [Linear Filter Estimation](/files/linear-filters.md)
 
 2. [Velocity Estimation via Derivatives](/files/velocity-estimation.md)
 
