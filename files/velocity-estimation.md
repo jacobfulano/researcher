@@ -19,7 +19,7 @@ Our aim is to show how motion information can in principle be recovered from the
 
 A complete description of the moving pattern is given by its space time image $I(x,t)$. Intuitively, the tilt of the space0time image away from the vertical gives the speed of motion - another way to say this is that \textit{motion is orientation in space time}. A basic task in motion perception is to recover the velocity $v$ from the time-varying retinal input, and this can be seen a the task of recovering the orientation of the space-time image.
 
-\subsection{Velocity as a function of spatial and temporal derivatives}
+## Velocity as a function of spatial and temporal derivatives
 The intensity of an image moving at constant velocity $v$ at any point $x$ and time $t$ is some function $I(x-v \cdot t)$
 
 \begin{equation}\label{eqn: Ix}
@@ -47,7 +47,7 @@ Another way to derive this:
     \item Neighbouring pixels have similar motion
 \end{enumerate}
 
-The under-constrained ``Optical Flow equation'' can be derived as follows. The above assumptions imply that:
+The under-constrained "Optical Flow equation" can be derived as follows. The above assumptions imply that:
 \begin{equation}
     I(x,t) \approx I(x+\Delta x, t + \Delta t)
 \end{equation}
@@ -73,8 +73,7 @@ This finally leads to:
     v = - \frac{\partial I /\partial t}{\partial I /\partial x}
 \end{equation}
 
-%%%%%%%%%%%%%%
-\subsection{Multi-channel gradient model: Encoding velocity via 1st and 2nd derivatives}
+## Multi-channel gradient model: Encoding velocity via 1st and 2nd derivatives
 
 Let $ I_x = \partial I / \partial x$, $I_{xx} = \partial I /\partial x \partial x$ and $I_{xt}=\partial I / \partial x \partial t$. Differentiating equation \ref{eqn: v} with respect to $x$ gives:
 
@@ -100,9 +99,7 @@ Adding these two equations with a weighting factor $w^2$ gives:
 
 This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not usually zero-valued simultaneously.
 
-%%%%%%%%%%
-% FIGURE %
-%%%%%%%%%%
+
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.75\textwidth]{figs/motionenergy.png}
@@ -112,8 +109,7 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
-%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Velocity from Motion-Energy}
+## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
 
 \begin{align}
@@ -135,9 +131,10 @@ Subtracting $E_L$ from $E_R$ gives the opponent energy:
 \end{align}
 It is important to note that opponent energy does \textit{not} estimate velocity, in part because it varies with contrast (how?)
 
-Adelson and Bergen (1985) noted that a veridical velocity estimation could be recovered if the opponent energy signal was divided by a ``static energy'' signal, AND the filters $A$,$B'$, $A'$ and $B$ are chosen carefully.
+Adelson and Bergen (1985) noted that a veridical velocity estimation could be recovered if the opponent energy signal was divided by a "static energy" signal, AND the filters $A$,$B'$, $A'$ and $B$ are chosen carefully.
 
 Since $A$ and $B$ are nondirectional spatial filters with the same temporal response but are $90\deg$ out of phase spatially, the static energy might be something like:
+
 \begin{equation}
     S^2 = 4 (A^2 + B^2)
 \end{equation}
@@ -158,8 +155,7 @@ The similarities are striking
 
 These two estimates of velocity are equivalent if we let $A=I_x$, a first order derivative in space, $A' = wI_{xt}$, the outer product of a first order derivative in space and a first order derivative in time, $B=-wI_{xx}$, a second-derivative in space, and $B'=I_t$, a first order temporal derivative.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Relationship to Optical Flow Algorithms}
+## Relationship to Optical Flow Algorithms
 
 Optical flow estimates can be used to determine structure from motion and has applications in video compression and video stabilization. The underlying assumptions are that
 \begin{enumerate}
@@ -167,7 +163,7 @@ Optical flow estimates can be used to determine structure from motion and has ap
     \item Neighbouring pixels have similar motion
 \end{enumerate}
 
-The under-constrained ``Optical Flow equation'' can be derived as follows. The above assumptions imply that:
+The under-constrained "Optical Flow equation" can be derived as follows. The above assumptions imply that:
 \begin{equation}
     I(x,y,t) \approx I(x+\Delta x,y + \Delta y , t + \Delta t)
 \end{equation}
@@ -193,9 +189,4 @@ where $V_x$ and $V_y$ are the velocity components and the derivatives are the de
     \nabla I^T\cdot\vec{V} = -I_t
 \end{equation}
 
-This equation cannot be solved without \textit{additional} constraints; this is known as the aperture problem. Variational, differential algorithms such as Lucas-Kanade and Horn-Schunk impose additional constraints by assuming that the displacement of the image contents between two nearby frames is small and approximately constant within a neighborhood of the point p under consideration.
-
-
-
-\bibliographystyle{plain}
-\bibliography{references}
+This equation cannot be solved without *additional* constraints; this is known as the aperture problem. Variational, differential algorithms such as Lucas-Kanade and Horn-Schunk impose additional constraints by assuming that the displacement of the image contents between two nearby frames is small and approximately constant within a neighborhood of the point p under consideration.
