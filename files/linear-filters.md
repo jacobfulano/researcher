@@ -11,12 +11,14 @@ A cell can be approximated as a _temporal filter_; that is, electrical input to 
 Many different systems can be thought of as filters, and formal filter analysis/signals processing is used in many different fields. Some examples are audio processing and image processing; you might apply a low pass temporal filter to a noisy audio recording in order to remove "high frequency" background noise, and you might apply a "low pass" spatial filter to an image in order to soften, or blur it.
 
 
-![lowpass](./images/lowpasshighpass.jpg =250x)
+![lowpass](./images/lowpasshighpass.jpg)
 Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)
 
 
-![lLow Pass High Pass](images/LowPassHighPass-image.jpg = 250x)
+![Low Pass High Pass](images/LowPassHighPass-image.jpg)
 (Left) Original Image (Center) Image after applying a low pass filter (a.k.a blur) (Right) Image after applying a high pass filter (a.k.a sharpen)
+
+![Low Pass High Pass](/images/LowPassHighPass-image.jpg)
 
 ## Linear Filters
 
