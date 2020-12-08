@@ -60,7 +60,7 @@ Substituting $r'=N(Fs)$ in the left side of the equation, this gives
 \frac{\langle r's \rangle}{\langle ss \rangle} \propto F
 \end{equation}
 
-(note that $\langle \frac{d}{ds} N(Fs) \rangle$ is just a constant). The left side of this equation is the expression for $F$ that results from a least-squares fit of the linear model $r'=Fs$ by linear regression. Note that the angled brackets here are defined as expectation, i.e. $ \lla x \rra = \int x p(x) dx$ where $p(x)$ is the probability distribution of $x$.
+(note that $\langle \frac{d}{ds} N(Fs) \rangle$ is just a constant). The left side of this equation is the expression for $F$ that results from a least-squares fit of the linear model $r'=Fs$ by linear regression. Note that the angled brackets here are defined as expectation, i.e. $ \langle x \rangle = \int x p(x) dx$ where $p(x)$ is the probability distribution of $x$.
 
 ## White Noise Analysis for Temporal Filter
 
@@ -68,11 +68,11 @@ We finally arrive at the extraction of _temporal_ linear filters. A linear filte
 
 $$ response = Filter*stimulus $$
 
-In some circumstances, we can simply divide the response by the simulus in order to get the filter F:
+In some circumstances, we can simply divide the response by the stimulus in order to get the filter F:
 
 $$ Filter = response/stimulus $$
 
-However, when dealing with temporal filters, the definition of a linear filter involves the mathematical operation of \textit{convolution}:
+However, when dealing with temporal filters, the definition of a linear filter involves the mathematical operation of _convolution_:
 
 $$ r(t) = F(t) \circledast s(t) $$
 
@@ -106,9 +106,8 @@ The stimulus was a rapidly flickering uniform field whose light intensity change
 
 They explain:
 
-\begin{quote}
-\textit{Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.}
-\end{quote}
+> Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.}
+
 
 \begin{figure}[h]
 \centering
