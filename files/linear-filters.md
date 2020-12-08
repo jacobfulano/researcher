@@ -11,11 +11,11 @@ A cell can be approximated as a _temporal filter_; that is, electrical input to 
 Many different systems can be thought of as filters, and formal filter analysis/signals processing is used in many different fields. Some examples are audio processing and image processing; you might apply a low pass temporal filter to a noisy audio recording in order to remove "high frequency" background noise, and you might apply a "low pass" spatial filter to an image in order to soften, or blur it.
 
 
-![lowpass](/images/lowpasshighpass.jpg =250x)
+![lowpass](./images/lowpasshighpass.jpg =250x)
 Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)
 
 
-![lLow Pass High Pass](/images/LowPassHighPass-image.jpg = 250x)
+![lLow Pass High Pass](images/LowPassHighPass-image.jpg = 250x)
 (Left) Original Image (Center) Image after applying a low pass filter (a.k.a blur) (Right) Image after applying a high pass filter (a.k.a sharpen)
 
 ## Linear Filters
@@ -102,7 +102,7 @@ They explain:
 
 > Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.
 
-![baccusmeister](/images/BaccusMeister.png =250x)
+![baccusmeister](./images/BaccusMeister.png =250x)
 
 Filter Analysis in Neuroscience, from Baccus et al. 2002 (Figure 2) (A) The Linear-Nonlinear (LN) model to predict the firing rate of a "fast OFF" ganglion cell. The flicker stimulus $s(t)$ is convolved with a linear filter $F(t)$, and then the result $g(t)$ is passed through a fixed nonlinearity $N(g)$ to produce the predicted firing rate $r'(t)$. (B) Predicted firing rate $r'(t)$ compared to the actual response $r(t)$. (C) The LN prediction of an amacrine cell membrane potential compared to the actual response. Segments displayed in (B) and (C) are representative of the entire recording.
 
