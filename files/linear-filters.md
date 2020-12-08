@@ -18,6 +18,8 @@ Many different systems can be thought of as filters, and formal filter analysis/
 
 {% include image.html url="/files/lowpasshighpass.jpg" description="Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)" %}
 
+![lowpass](/files/lowpasshighpass.jpg)
+
 
 \begin{figure}[h]
 \centering
@@ -110,6 +112,7 @@ They explain:
 
 > Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.}
 
+![baccusmeister](/files/BaccusMeister.png)
 
 \begin{figure}[h]
 \centering
