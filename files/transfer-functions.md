@@ -6,7 +6,7 @@ layout: default
 
 Transfer functions sometimes come in handy when doing classical signals processing. These are some notes I took while working on questions of direction selectivity in the fly visual system.
 
-### Background: Transfer Functions and Bode Plots}
+### Background: Transfer Functions and Bode Plots
 
 Background: Helpful Mathematical Properties}
 
