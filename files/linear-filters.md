@@ -115,10 +115,10 @@ Filter Analysis in Neuroscience, from Baccus et al. 2002 (Figure 2) (A) The Line
 ## References
 
 
-1. Baccus, S. A., \& Meister, M. (2002). Fast and slow contrast adaptation in retinal circuitry. Neuron, 36(5), 909-919.
+1. Baccus, S. A., & Meister, M. (2002). **Fast and slow contrast adaptation in retinal circuitry.** Neuron, 36(5), 909-919.
 
-2. Behnia, R., Clark, D. A., Carter, A. G., Clandinin, T. R., \& Desplan, C. (2014). Processing properties of ON and OFF pathways for Drosophila motion detection. Nature, 512(7515), 427.
+2. Behnia, R., Clark, D. A., Carter, A. G., Clandinin, T. R., & Desplan, C. (2014). **Processing properties of ON and OFF pathways for Drosophila motion detection.** Nature, 512(7515), 427.
 
-3. Chichilnisky, E. J. (2001). A simple white noise analysis of neuronal light responses. Network: Computation in Neural Systems, 12(2), 199-213.
+3. Chichilnisky, E. J. (2001). **A simple white noise analysis of neuronal light responses.** Network: Computation in Neural Systems, 12(2), 199-213.
 
-4.  Smith, S. W. (1997). The scientist and engineer's guide to digital signal processing. <http://www.dspguide.com/>
+4.  Smith, S. W. (1997). **The scientist and engineer's guide to digital signal processing.** <http://www.dspguide.com/>
