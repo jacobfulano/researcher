@@ -107,10 +107,8 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
-![motionenergy](/images/motionenergy.png)
-![motionenergy](images/motionenergy.png)
-version 2
-![motionenergy](./images/motionenergy.png)
+![motionenergy](/images/motionenergy.png =250x)
+
 
 ## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
@@ -132,7 +130,7 @@ Subtracting $E_L$ from $E_R$ gives the opponent energy:
     E_O &= 4(A'B - AB')
 \end{split}
 \end{align}
-It is important to note that opponent energy does \textit{not} estimate velocity, in part because it varies with contrast (how?)
+It is important to note that opponent energy does *not* estimate velocity, in part because it varies with contrast (how?)
 
 Adelson and Bergen (1985) noted that a veridical velocity estimation could be recovered if the opponent energy signal was divided by a "static energy" signal, AND the filters $A$,$B'$, $A'$ and $B$ are chosen carefully.
 

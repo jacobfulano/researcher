@@ -10,23 +10,13 @@ A cell can be approximated as a _temporal filter_; that is, electrical input to 
 
 Many different systems can be thought of as filters, and formal filter analysis/signals processing is used in many different fields. Some examples are audio processing and image processing; you might apply a low pass temporal filter to a noisy audio recording in order to remove "high frequency" background noise, and you might apply a "low pass" spatial filter to an image in order to soften, or blur it.
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{/files/lowpasshighpass.jpg}
-\caption{Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)}
-\end{figure}
+
+![lowpass](/images/lowpasshighpass.jpg =250x)
+Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)
 
 
-
-![lowpass](/files/lowpasshighpass.jpg)
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{LowPassHighPass-image.jpg}
-\caption{(Left) Original Image (Center) Image after applying a low pass filter (a.k.a blur) (Right) Image after applying a high pass filter (a.k.a sharpen)}
-\end{figure}
-
+![lLow Pass High Pass](/images/LowPassHighPass-image.jpg = 250x)
+(Left) Original Image (Center) Image after applying a low pass filter (a.k.a blur) (Right) Image after applying a high pass filter (a.k.a sharpen)
 
 ## Linear Filters
 
@@ -110,26 +100,13 @@ The stimulus was a rapidly flickering uniform field whose light intensity change
 
 They explain:
 
-> Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.}
+> Thus the linear filter summarizes the temporal processing between the stimulus and the neuron's response, whereas the nonlinearity describes the instantaneous relationship between the filtered stimulus and the response. A intuitive description of the LN model is that the time reverse of the filter function $F(t)$ represents the stimulus feature to which the neuron is most sensitive. The filtered stimulus g(t) measures how strongly that feature is represented in the current stimulus, and the function $N(g)$ determines how $g(t)$ is transformed into a response, including the threshold effects, rectification, and other distortions.
 
-![baccusmeister](/files/BaccusMeister.png)
+![baccusmeister](/images/BaccusMeister.png =250x)
 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{BaccusMeister.png}
-\caption{Filter Analysis in Neuroscience, from Baccus et al. 2002 (Figure 2) (A) The Linear-Nonlinear (LN) model to predict the firing rate of a "fast OFF" ganglion cell. The flicker stimulus $s(t)$ is convolved with a linear filter $F(t)$, and then the result $g(t)$ is passed through a fixed nonlinearity $N(g)$ to produce the predicted firing rate $r'(t)$. (B) Predicted firing rate $r'(t)$ compared to the actual response $r(t)$. (C) The LN prediction of an amacrine cell membrane potential compared to the actual response. Segments displayed in (B) and (C) are representative of the entire recording.}
-\end{figure}
+Filter Analysis in Neuroscience, from Baccus et al. 2002 (Figure 2) (A) The Linear-Nonlinear (LN) model to predict the firing rate of a "fast OFF" ganglion cell. The flicker stimulus $s(t)$ is convolved with a linear filter $F(t)$, and then the result $g(t)$ is passed through a fixed nonlinearity $N(g)$ to produce the predicted firing rate $r'(t)$. (B) Predicted firing rate $r'(t)$ compared to the actual response $r(t)$. (C) The LN prediction of an amacrine cell membrane potential compared to the actual response. Segments displayed in (B) and (C) are representative of the entire recording.
 
 
-
-
-
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.8\textwidth]{BaccusMeister6.png}
-\caption{Filter Analysis in Vision Neuroscience, from Baccus et al. 2002 (Figure 6). \textbf{Some Amacrine Cells Change Their Baseline Membrane Potential during Contrast Adaptation}
-(A–D) Amacrine cells that did not adapt to contrast. (A) Responses of three amacrine cells to full-field flashes of 100 contrast, averaged over 15 trials. (B and C) Filters and nonlinearities for these cells during $H_{early}$, $H_{late}$ , $L_{early}$, and $L_{late}$, displayed as in Figure 2.  (D) Vertical projections of confocal images taken of two nonadapting amacrine cells; both had sustained flash responses (data not shown). (E–H) Amacrine cells that adapted to contrast. (E) Responses of two amacrine cells to full-field flashes of 100 contrast, averaged over 15 trials. (F and G) Filters and nonlinearities for these cells during $H_{early}$, $H_{late}$ , $L_{early}$, and $L_{late}$. (H) Membrane potential of an amacrine cell (bottom panel in E–G) during step changes in contrast.}
-\end{figure}
 
 
 ## References
