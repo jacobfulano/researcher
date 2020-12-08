@@ -69,7 +69,7 @@ This finally leads to:
     \frac{\partial I}{\partial x} v + \frac{\partial I}{\partial t} = 0
 \end{equation}
 
-\begin{equation} \label{eqn: v}
+\begin{equation} 
     v = - \frac{\partial I /\partial t}{\partial I /\partial x}
 \end{equation}
 
