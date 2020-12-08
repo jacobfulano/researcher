@@ -34,7 +34,7 @@ Linear systems have unique properties that allow for easy and powerful modeling 
 
 A system is strictly linear if it obeys two properties: **homogeneity** and **additivity**. Homogeneity means that an amplitude change in the input results in an identical amplitude change in the output (it is proportional). Additivity means that the sum of two input signals is equal to the sum of the respective output signals.
 
-A good reference for digital signals processing is Smith, S. W. (1997). _The scientist and engineer's guide to digital signal processing._ This can be accessed for free online at http://www.dspguide.com/
+A good reference for digital signals processing is Smith, S. W. (1997). _The scientist and engineer's guide to digital signal processing._ This can be accessed for free online at <http://www.dspguide.com/>
 
 ## Static Nonlinearity
 
