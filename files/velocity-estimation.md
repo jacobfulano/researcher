@@ -5,9 +5,7 @@ layout: default
 
 How might a biological system estimate velocity?
 
-Visual Perception: Physiology, Psychology and Ecology by Bruce, Green and Georgeson
-
-Chapter 8 of this book contains a wealth of information about the computation of image motion. These notes are taken directly from this chapter.
+Chapter 8 of the book *Visual Perception: Physiology, Psychology and Ecology* by Bruce, Green and Georgeson contains a wealth of information about the computation of image motion. These notes are taken directly from this chapter.
 
 Movement is a change of position over time.The change in position divided by the time taken gives the velocity of movement. This simple intuition forms the basis for a class of models of motion perception known as correspondence models, since with this approach the major problem is that of matching things over time.
 
@@ -17,7 +15,7 @@ Our aim is to show how motion information can in principle be recovered from the
     x - v \cdot t = x_i
 \end{equation}
 
-A complete description of the moving pattern is given by its space time image $I(x,t)$. Intuitively, the tilt of the space0time image away from the vertical gives the speed of motion - another way to say this is that \textit{motion is orientation in space time}. A basic task in motion perception is to recover the velocity $v$ from the time-varying retinal input, and this can be seen a the task of recovering the orientation of the space-time image.
+A complete description of the moving pattern is given by its space time image $I(x,t)$. Intuitively, the tilt of the space0time image away from the vertical gives the speed of motion - another way to say this is that *motion is orientation in space time*. A basic task in motion perception is to recover the velocity $v$ from the time-varying retinal input, and this can be seen a the task of recovering the orientation of the space-time image.
 
 ## Velocity as a function of spatial and temporal derivatives
 The intensity of an image moving at constant velocity $v$ at any point $x$ and time $t$ is some function $I(x-v \cdot t)$
@@ -69,7 +67,7 @@ This finally leads to:
     \frac{\partial I}{\partial x} v + \frac{\partial I}{\partial t} = 0
 \end{equation}
 
-\begin{equation} 
+\begin{equation}
     v = - \frac{\partial I /\partial t}{\partial I /\partial x}
 \end{equation}
 
@@ -109,7 +107,9 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
-![motionenergy](/images/motionenergy.png)
+![motionenergy](images/motionenergy.png)
+version 2
+![motionenergy](./images/motionenergy.png)
 
 ## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
@@ -151,9 +151,9 @@ How does this relate to the velocity estimate above based on first and second or
 
 The similarities are striking
 
-\begin{equation*}
+\begin{equation}
     v = \frac{(A'B - AB')}{(A^2 + B^2)}, \space v = - \frac{(I_x I_t + w^2 I_{xx}I_{xt})}{(I_x^2 + w^2 I_{xx})}
-\end{equation*}
+\end{equation}
 
 These two estimates of velocity are equivalent if we let $A=I_x$, a first order derivative in space, $A' = wI_{xt}$, the outer product of a first order derivative in space and a first order derivative in time, $B=-wI_{xx}$, a second-derivative in space, and $B'=I_t$, a first order temporal derivative.
 
@@ -195,6 +195,6 @@ This equation cannot be solved without *additional* constraints; this is known a
 
 ## References
 
-1. Adelson, Edward H., and James R. Bergen. "Spatiotemporal energy models for the perception of motion." Josa a 2.2 (1985): 284-299.
+1. Adelson, Edward H., and James R. Bergen. **Spatiotemporal energy models for the perception of motion.** Josa a 2.2 (1985): 284-299.
 
-2. Bruce, Vicki, Patrick R. Green, and Mark A. Georgeson. Visual perception: Physiology, psychology, & ecology. Psychology Press, 2003.
+2. Bruce, Vicki, Patrick R. Green, and Mark A. Georgeson. **Visual perception: Physiology, psychology, & ecology**. Psychology Press, 2003.
