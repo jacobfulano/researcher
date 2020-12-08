@@ -158,23 +158,23 @@ Suppose we want to linearize about the fixed point $\mathbf{h}^\*$. Let $\mathbf
 
 
 $$
-\phi(\mathbf{W}(\mathbf{h}^* + \delta \mathbf{h})) \approx \phi(\mathbf{W}\mathbf{h}^{\*}) + \mathbf{\phi'}(\mathbf{W}\mathbf{h}^*) \odot (\mathbf{W} \delta\mathbf{ h} )
+\phi(\mathbf{W}(\mathbf{h}^* + \delta \mathbf{h})) \approx \phi(\mathbf{W}\mathbf{h}^{* }) + \mathbf{\phi'}(\mathbf{W}\mathbf{h}^*) \odot (\mathbf{W} \delta\mathbf{ h} )
 $$
 
 Using index notation, this would be
 
 $$
-\phi \Big( \sum_k W_{ik} (h^{\*}\_k + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h^\*\_k \Big) + \phi' \Big( \sum_k W_{ik} h^*\_k \Big)  \sum_k W_{ik} \delta h_k
+\phi \Big( \sum_k W_{ik} (h^{* }\_k + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h^{* }\_k \Big) + \phi' \Big( \sum_k W_{ik} h^*\_k \Big)  \sum_k W_{ik} \delta h_k
 $$
 
 Plugging this back into the RNN equation, we get
 
 $$
-\tau \frac{d}{dt}(\mathbf{h}^\*+\delta \mathbf{h}) = -(\mathbf{h}^\*+\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
+\tau \frac{d}{dt}(\mathbf{h}^\*+\delta \mathbf{h}) = -(\mathbf{h}^* +\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
 $$
 
 $$
-\tau \frac{d}{dt}(\delta \mathbf{h}) = -\delta \mathbf{v}{h} - \mathbf{h}^* + \mathbf{\phi}(\mathbf{Wh}^\*) + \mathbf{\phi'}(\mathbf{Wh}^*) \odot (\mathbf{W} \delta\mathbf{h})  + \mathbf{\eta}(t)
+\tau \frac{d}{dt}(\delta \mathbf{h}) = -\delta \mathbf{h} - \mathbf{h}^* + \mathbf{\phi}(\mathbf{Wh}^* )  + \mathbf{\phi'}(\mathbf{Wh}^*) \odot (\mathbf{W} \delta\mathbf{h})  + \mathbf{\eta}(t)
 $$
 
 Note that $-\mathbf{h}^\*$ is *not* cancelled by the term $\mathbf{\phi}(\mathbf{Wh}^*)$.
