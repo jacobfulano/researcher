@@ -164,13 +164,13 @@ $$
 Using index notation, this would be
 
 $$
-\phi \Big( \sum_k W_{ik} (h^{* }\_k + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h^{* }\_k \Big) + \phi' \Big( \sum_k W_{ik} h^*\_k \Big)  \sum_k W_{ik} \delta h_k
+\phi \Big( \sum_k W_{ik} (h_k^* + \delta h_k)  \Big) \approx \phi \Big( \sum_k W_{ik} h_k^* \Big) + \phi' \Big( \sum_k W_{ik} h_k^* \Big)  \sum_k W_{ik} \delta h_k
 $$
 
 Plugging this back into the RNN equation, we get
 
 $$
-\tau \frac{d}{dt}(\mathbf{h}^\*+\delta \mathbf{h}) = -(\mathbf{h}^* +\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
+\tau \frac{d}{dt}(\mathbf{h}^* +\delta \mathbf{h}) = -(\mathbf{h}^* +\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
 $$
 
 $$
