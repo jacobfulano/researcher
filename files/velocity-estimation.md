@@ -109,6 +109,8 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
+![motionenergy](/files/motionenergy.png)
+
 ## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
 
@@ -190,3 +192,9 @@ where $V_x$ and $V_y$ are the velocity components and the derivatives are the de
 \end{equation}
 
 This equation cannot be solved without *additional* constraints; this is known as the aperture problem. Variational, differential algorithms such as Lucas-Kanade and Horn-Schunk impose additional constraints by assuming that the displacement of the image contents between two nearby frames is small and approximately constant within a neighborhood of the point p under consideration.
+
+## References
+
+1. Adelson, Edward H., and James R. Bergen. "Spatiotemporal energy models for the perception of motion." Josa a 2.2 (1985): 284-299.
+
+2. Bruce, Vicki, Patrick R. Green, and Mark A. Georgeson. Visual perception: Physiology, psychology, & ecology. Psychology Press, 2003.
