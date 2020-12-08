@@ -115,7 +115,7 @@ However, this does not seem to *normalize* the response, so there is a simple ga
 $$f(t) = a^2 t \cdot e^{-at} \rightarrow |H(s)| = \frac{a^2}{(\omega^2 + a^2)}$$
 
 
-Does a better job - here there is no gratuitous gain change.
+![Comparison of Low Pass Filters](/images/bp_gain1.png)
 
 The phase for both of these are is:
 
