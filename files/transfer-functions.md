@@ -116,6 +116,7 @@ $$f(t) = a^2 t \cdot e^{-at} \rightarrow |H(s)| = \frac{a^2}{(\omega^2 + a^2)}$$
 
 
 ![Comparison of Low Pass Filters](/images/bp_gain1.png)
+*Comparison of Gain and Phase for two versions of filters. An important detail is that the filter* $f(t)=a^2te^{-at}$ *has a phase shift from $0$ to $180^\circ$*
 
 The phase for both of these are is:
 
