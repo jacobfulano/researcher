@@ -2,7 +2,7 @@
 layout: default
 ---
 
-# Velocity Estimation via derivatives
+# Velocity Estimation via Derivatives
 
 How might a biological system estimate velocity?
 
