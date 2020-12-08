@@ -2,6 +2,7 @@
 layout: default
 ---
 
+# Linear Filter Estimation for Vision Neuroscience
 
 A cell can be approximated as a _temporal filter_; that is, electrical input to the cell is _processed_, or _filtered_, and the output is different from the input as a result. The following notes explain the rationale behind treating cells as filters and highlight one standard method for mathematical filter extraction, _white noise analysis_. This particular method consists of inputting white noise to the cell (either directly e.g. by injecting current or indirectly e.g. by showing white noise visual stimulus to the organism) and then extracting the linear filter mathematically.
 

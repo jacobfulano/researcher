@@ -2,6 +2,7 @@
 layout: default
 ---
 
+# Velocity Estimation via derivatives
 
 How might a biological system estimate velocity?
 
@@ -107,7 +108,8 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
-![motionenergy](/images/motionenergy.png =250x)
+![motionenergy](/images/motionenergy.png)
+*Motion-Energy model with spatiotemporal filters chosen as first and second order gaussian derivatives. This is from Figure 8.8 in* **Visual Perception** *(page 224)*
 
 
 ## Velocity from Motion-Energy
