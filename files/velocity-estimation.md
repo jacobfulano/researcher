@@ -99,14 +99,6 @@ Adding these two equations with a weighting factor $w^2$ gives:
 This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not usually zero-valued simultaneously.
 
 
-\begin{figure}[h!]
-    \centering
-    \includegraphics[width=0.75\textwidth]{figs/motionenergy.png}
-    %\captionsetup{format=hang}
-    \caption{Motion-Energy model with spatiotemporal filters chosen as first and second order gaussian derivatives. This is from Figure 8.8 in \textit{Visual Perception} \cite{bruce2003visual} (page 224)}
-    \label{fig:motionenergy}
-\end{figure}
-
 
 ![motionenergy](/images/motionenergy.png)
 *Motion-Energy model with spatiotemporal filters chosen as first and second order gaussian derivatives. This is from Figure 8.8 in* **Visual Perception** *(page 224)*
