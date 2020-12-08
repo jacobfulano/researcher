@@ -11,7 +11,7 @@ layout: default
   * While New York City was still reeling from the terrible first wave of the Covid crisis in April 2020, a few of us from the Behnia lab decided to organize a short python course for our neuroscience colleagues. While our video lectures are not publicly available, the course slides and links can be found at [https://neuropython.com/](https://neuropython.com/)
 
 * **Computation and the Brain** COMS6998, Columbia University [Fall 2018, Fall 2019]
-  * In this discussion-based seminar led by Professor [Christos Papadimitriou](https://en.wikipedia.org/wiki/Logicomix), we discussed recent research papers relating to neuroscience and machine learning. I was lucky to be a TA two years in a row.
+  * In this discussion-based seminar led by Professor [Christos Papadimitriou](https://en.wikipedia.org/wiki/Logicomix), we discussed recent research papers relating to neuroscience and machine learning. Students also completed a group project. I was lucky to be a TA two years in a row.
 
 * [Introduction to Computational Neuroscience](https://ctn.zuckermaninstitute.columbia.edu/courses) G4360, Columbia University [Spring 2018]
 
