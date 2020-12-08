@@ -107,6 +107,7 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
+![motionenergy](/images/motionenergy.png)
 ![motionenergy](images/motionenergy.png)
 version 2
 ![motionenergy](./images/motionenergy.png)
