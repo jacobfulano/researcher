@@ -107,7 +107,7 @@ They explain:
 
 ![baccusmeister](/images/BaccusMeister.png)
 
-*Filter Analysis in Neuroscience, from Baccus et al. 2002 (Figure 2) (A) The Linear-Nonlinear (LN) model to predict the firing rate of a "fast OFF" ganglion cell. The flicker stimulus $s(t)$ is convolved with a linear filter $F(t)$, and then the result $g(t)$ is passed through a fixed nonlinearity $N(g)$ to produce the predicted firing rate $r'(t)$. (B) Predicted firing rate $r'(t)$ compared to the actual response $r(t)$. (C) The LN prediction of an amacrine cell membrane potential compared to the actual response. Segments displayed in (B) and (C) are representative of the entire recording.*
+*Image from Baccus et al. 2002 (Figure 2) (A) The Linear-Nonlinear (LN) model to predict the firing rate of a "fast OFF" ganglion cell. The flicker stimulus $s(t)$ is convolved with a linear filter $F(t)$, and then the result $g(t)$ is passed through a fixed nonlinearity $N(g)$ to produce the predicted firing rate $r'(t)$. (B) Predicted firing rate $r'(t)$ compared to the actual response $r(t)$. (C) The LN prediction of an amacrine cell membrane potential compared to the actual response. Segments displayed in (B) and (C) are representative of the entire recording.*
 
 
 
