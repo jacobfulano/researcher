@@ -6,7 +6,7 @@ layout: default
 
 How might a biological system estimate velocity?
 
-Chapter 8 of the book *Visual Perception: Physiology, Psychology and Ecology* by Bruce, Green and Georgeson contains a wealth of information about the computation of image motion. These notes are taken directly from this chapter.
+Chapter 8 of the book *Visual Perception: Physiology, Psychology and Ecology* by Bruce, Green and Georgeson contains a wealth of information about image-based computation of motion. These notes are taken directly from this chapter.
 
 Movement is a change of position over time.The change in position divided by the time taken gives the velocity of movement. This simple intuition forms the basis for a class of models of motion perception known as correspondence models, since with this approach the major problem is that of matching things over time.
 
@@ -114,11 +114,11 @@ $$ E_R = R_1^2 + R_2^2 $$
 
 Subtracting $E_L$ from $E_R$ gives the opponent energy:
 
-$$ E_O &= E_R - E_L $$
-$$ &= R_1^2 + R_2^2 - (L_1^2 + L_2^2) $$
-$$ &= (A-B')^2 + (B+A')^2 - (A+B')^2 - (B-A')^2 $$
-$$ &= A^2 + B^2 -2AB' + B^2 + A'^2 + 2A'B -(A^2 + B'^2 + 2AB') - (B^2 + A'2 - 2A'B) $$
-$$ E_O &= 4(A'B - AB') $$
+\\ E_O &= E_R - E_L \\
+$$= R_1^2 + R_2^2 - (L_1^2 + L_2^2)$$
+$$= (A-B')^2 + (B+A')^2 - (A+B')^2 - (B-A')^2$$
+$= A^2 + B^2 -2AB' + B^2 + A'^2 + 2A'B -(A^2 + B'^2 + 2AB') - (B^2 + A'2 - 2A'B)$
+\\ E_O &= 4(A'B - AB') \\
 
 It is important to note that opponent energy does *not* estimate velocity, in part because it varies with contrast (how?)
 
