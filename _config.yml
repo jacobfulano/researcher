@@ -19,9 +19,9 @@ nav:
  - name: "About"
    link: '/'
  - name: "Research"
-   link: "research"
+   link: "/research"
  - name: "Teaching"
-   link: "teaching"
+   link: "/teaching"
  - name: "Notes"
    link: "notes"
  # - name: "Resume"
