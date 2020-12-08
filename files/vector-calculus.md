@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-### A Review of Vector Calculus for Neural Networks
+# A Review of Vector Calculus for Neural Networks
 
 The following notes are meant to review aspects of vector calculus that appear often in neural network research. I provide some cursory definitions and then motivate them with examples. I also try to use Einstein summation notation alongside index notation in order to build intuitions for the various operations. So much of this is about careful bookkeeping!
 
