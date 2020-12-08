@@ -109,7 +109,7 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 \end{figure}
 
 
-![motionenergy](/motionenergy.png)
+![motionenergy](/images/motionenergy.png)
 
 ## Velocity from Motion-Energy
 $R_1 = A-B'$ $L_1 = A+B'$ $L_2 = B-A'$ $R_2 = B+A'$. These are the filters that are oriented in space-time. Applying a squared nonlinearity to each and summing pairs gives the left and right motion-energy:
@@ -160,10 +160,10 @@ These two estimates of velocity are equivalent if we let $A=I_x$, a first order 
 ## Relationship to Optical Flow Algorithms
 
 Optical flow estimates can be used to determine structure from motion and has applications in video compression and video stabilization. The underlying assumptions are that
-\begin{enumerate}
-    \item Pixel intensities of an object do not change between consecutive frames
-    \item Neighbouring pixels have similar motion
-\end{enumerate}
+
+* Pixel intensities of an object do not change between consecutive frames
+* Neighbouring pixels have similar motion
+
 
 The under-constrained "Optical Flow equation" can be derived as follows. The above assumptions imply that:
 \begin{equation}
