@@ -130,13 +130,11 @@ They explain:
 
 ## References
 
-\begin{enumerate}
-\item Baccus, S. A., \& Meister, M. (2002). Fast and slow contrast adaptation in retinal circuitry. Neuron, 36(5), 909-919.
 
-\item Behnia, R., Clark, D. A., Carter, A. G., Clandinin, T. R., \& Desplan, C. (2014). Processing properties of ON and OFF pathways for Drosophila motion detection. Nature, 512(7515), 427.
+1. Baccus, S. A., \& Meister, M. (2002). Fast and slow contrast adaptation in retinal circuitry. Neuron, 36(5), 909-919.
 
-\item Chichilnisky, E. J. (2001). A simple white noise analysis of neuronal light responses. Network: Computation in Neural Systems, 12(2), 199-213.
+2. Behnia, R., Clark, D. A., Carter, A. G., Clandinin, T. R., \& Desplan, C. (2014). Processing properties of ON and OFF pathways for Drosophila motion detection. Nature, 512(7515), 427.
 
-\item Smith, S. W. (1997). The scientist and engineer's guide to digital signal processing. \url{http://www.dspguide.com/}
+3. Chichilnisky, E. J. (2001). A simple white noise analysis of neuronal light responses. Network: Computation in Neural Systems, 12(2), 199-213.
 
-\end{enumerate}
+4.  Smith, S. W. (1997). The scientist and engineer's guide to digital signal processing. \url{http://www.dspguide.com/}
