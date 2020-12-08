@@ -5,29 +5,28 @@ layout: default
 
 ### A Review of Vector Calculus for Neural Networks
 
-
 The following notes are meant to review aspects of vector calculus that appear often in neural network research. I provide some cursory definitions and then motivate them with examples. I also try to use Einstein summation notation alongside index notation in order to build intuitions for the various operations. So much of this is about careful bookkeeping!
 
 
 We can try to be consistent throughout the notes by defining column vectors as:
 
-$$ \bm{v} = v_j = \begin{bmatrix}
+$$ \mathbf{v} = v_j = \begin{bmatrix}
            v_{1} \\
            v_{2} \\
            \vdots \\
            v_{N}
          \end{bmatrix}$$
-where $j$ is a "free index," and row vectors as $\bm{v}^\top$. Einstein summation notation makes this distinction clear by defining $v^j$ as a (column) **vector** and $v_j$ as a (row) **covector** (a.k.a dual vectors).
+where $j$ is a "free index," and row vectors as $\mathbf{v}^\top$. Einstein summation notation makes this distinction clear by defining $v^j$ as a (column) **vector** and $v_j$ as a (row) **covector** (a.k.a dual vectors).
 
 ## 1. Operations
 
 #### Vector-Vector
-Let $\bm{u}^\top$ be a row vector of size $1 \times N$, $\bm{v}$ be a column vector size $N \times 1$,
+Let $\mathbf{u}^\top$ be a row vector of size $1 \times N$, $\mathbf{v}$ be a column vector size $N \times 1$,
 
 | | Index Notation | Summation Notation | Returns |
 | --- | --- | --- | --- |
-| $\bm{u}^\top \cdot \bm{v}$ (inner product) | $\sum_j u_jv_j$ | $u_j v^j$ | scalar |
-| $\bm{u} \odot \bm{v}^\top$ (outer product) | $(\bm{u}\bm{v}^\top)_{ij} = u_iv_j$ | $(\bm{u}\bm{v}^\top)^i_j = u^i v_j$ | $N \times N$ matrix |
+| $\mathbf{u}^\top \cdot \mathbf{v}$ (inner product) | $\sum_j u_jv_j$ | $u_j v^j$ | scalar |
+| $\mathbf{u} \odot \mathbf{v}^\top$ (outer product) | $(\mathbf{u}\mathbf{v}^\top)_{ij} = u_iv_j$ | $(\mathbf{u}\mathbf{v}^\top)^i_j = u^i v_j$ | $N \times N$ matrix |
 
 Note that for the **inner product**, the indices are **shared**, while for the **outer product**, the indices are **not shared**. In addition, note that an index that appears twice is called a "dummy index."
 
@@ -35,22 +34,22 @@ We also notice that there is no need for a summation symbol when using Einstein 
 
 #### Matrix-Vector
 
-Let $\bm{v}$ be a column vector size $N \times 1$, and matrix $\bm{A}$ size $M \times N$. The following operations will return a vector:
+Let $\mathbf{v}$ be a column vector size $N \times 1$, and matrix $\mathbf{A}$ size $M \times N$. The following operations will return a vector:
 | | Index Notation | Summation Notation | Returns |
 | --- | --- | --- | --- |
-| $\bm{A}\bm{v}$ | $\sum_j A_{ij} v_j = (\bm{Av})_i$ | $A^i_j v^j$ | column vector |
-| $(\bm{A}\bm{v})^\top = \bm{v}^\top \bm{A}^\top$  | $\sum_j v_j A_{ji}  = (\bm{v}^\top \bm{A}^\top)_i$ | $v_j A^j_i$ | row vector |
+| $\mathbf{A}\mathbf{v}$ | $\sum_j A_{ij} v_j = (\mathbf{Av})_i$ | $A^i_j v^j$ | column vector |
+| $(\mathbf{A}\mathbf{v})^\top = \mathbf{v}^\top \mathbf{A}^\top$  | $\sum_j v_j A_{ji}  = (\mathbf{v}^\top \mathbf{A}^\top)_i$ | $v_j A^j_i$ | row vector |
 
 We see here that for matrix $A_{ij}$ the first free index $i$ corresponds to the row, and the second free index $j$ corresponds to the column. In Einstein notation, the upper index of $A^i_j$ is the row, and the lower index is the column.
 
 #### Matrix-Matrix
 
-Let matrix $\bm{A}$ size $M \times N$, and matrix $\bm{B}$ size $N \times P$
+Let matrix $\mathbf{A}$ size $M \times N$, and matrix $\mathbf{B}$ size $N \times P$
 
 | | Index Notation | Summation Notation | Returns |
 | --- | --- | --- | --- |
-| $\bm{A} \bm{B}$ | $\sum_j  A_{ij} B_{jk} = (\bm{A}\bm{B})_{ik}$ | $A^i_j B^j_k = (\bm{A}\bm{B})^i_k$ | $M \times P$ matrix |
-| $(\bm{AB})^\top = \bm{B}^\top \bm{A}^\top$ | $\sum_j   B_{kj}A_{ji} = (\bm{A}\bm{B})_{ki}$ | $B^k_j A^j_i = (\bm{A}\bm{B})^k_i$| $P \times M$ matrix |
+| $\mathbf{A} \mathbf{B}$ | $\sum_j  A_{ij} B_{jk} = (\mathbf{A}\mathbf{B})_{ik}$ | $A^i_j B^j_k = (\mathbf{A}\mathbf{B})^i_k$ | $M \times P$ matrix |
+| $(\mathbf{AB})^\top = \mathbf{B}^\top \mathbf{A}^\top$ | $\sum_j   B_{kj}A_{ji} = (\mathbf{A}\mathbf{B})_{ki}$ | $B^k_j A^j_i = (\mathbf{A}\mathbf{B})^k_i$| $P \times M$ matrix |
 
 ## 2. Derivatives
 
@@ -58,15 +57,15 @@ Here is a useful table describing the types of common matrix derivatives we migh
 
 | Type | Scalar | Vector | Matrix |
 | --- | --- | --- | --- |
-| scalar | $\frac{\partial y}{\partial x}$| $\frac{\partial \bm{y}}{\partial x}$| $\frac{\partial \bm{Y}}{\partial x}$|
-| vector | $\frac{\partial y}{\partial \bm{x}}$| $\frac{\partial \bm{y}}{\partial \bm{x}}$| |
-| matrix | $\frac{\partial y}{\partial \bm{X}}$| | |
+| scalar | $\frac{\partial y}{\partial x}$| $\frac{\partial \mathbf{y}}{\partial x}$| $\frac{\partial \mathbf{Y}}{\partial x}$|
+| vector | $\frac{\partial y}{\partial \mathbf{x}}$| $\frac{\partial \mathbf{y}}{\partial \mathbf{x}}$| |
+| matrix | $\frac{\partial y}{\partial \mathbf{X}}$| | |
 
 When dealing with the derivative of a vector with respect to another vector, there is an ambiguity in how to write the Jacobian. This was often a source of confusion for me.
 
-For vectors $\bm{y} \in \mathbb{R}^{N}$ and $\bm{x} \in \mathbb{R}^{M}$, the Jacobian $\frac{\partial \bm{y}}{\partial \bm{x}}$ is a matrix that can be expressed as $M \times N$ or $N \times M$. The convention often used in "numerator" notation, where the first dimension of the matrix (i.e. the number of rows) has the dimension of the numerator (e.g. $N$) and the second dimension of the matrix (i.e. the number of columns) has the dimension of the denomenator (e.g. $M$).
+For vectors $\mathbf{y} \in \mathbb{R}^{N}$ and $\mathbf{x} \in \mathbb{R}^{M}$, the Jacobian $\frac{\partial \mathbf{y}}{\partial \mathbf{x}}$ is a matrix that can be expressed as $M \times N$ or $N \times M$. The convention often used in "numerator" notation, where the first dimension of the matrix (i.e. the number of rows) has the dimension of the numerator (e.g. $N$) and the second dimension of the matrix (i.e. the number of columns) has the dimension of the denomenator (e.g. $M$).
 
-$$\frac{\partial \bm{y}}{\partial \bm{x}} =  \begin{bmatrix}
+$$\frac{\partial \mathbf{y}}{\partial \mathbf{x}} =  \begin{bmatrix}
            \frac{\partial y_1}{\partial x_1} &  \frac{\partial y_1}{\partial x_2}& \dots & \frac{\partial y_1}{\partial x_M} \\
            \frac{\partial y_2}{\partial x_1} \\
            \vdots \\
@@ -78,8 +77,8 @@ The rest of these notes will use this numerator notation.
 
 | | Index | Summation |
 | --- | --- | --- |
-| $\frac{\partial \bm{Av}}{\partial \bm{v}}$ | $\frac{\partial }{\partial \bm{v}} \sum_j A_{ij} v_j = A_{ij}$ | $\partial_v A^i_jv^j = A^i_j$|
-| $\frac{\partial \bm{v}^\top \bm{A}}{\partial \bm{v}}$ | $A_{ji} = \bm{A}^\top$ | $A^j_i$|
+| $\frac{\partial \mathbf{Av}}{\partial \mathbf{v}}$ | $\frac{\partial }{\partial \mathbf{v}} \sum_j A_{ij} v_j = A_{ij}$ | $\partial_v A^i_jv^j = A^i_j$|
+| $\frac{\partial \mathbf{v}^\top \mathbf{A}}{\partial \mathbf{v}}$ | $A_{ji} = \mathbf{A}^\top$ | $A^j_i$|
 
 
 
@@ -95,16 +94,16 @@ $$ \frac{\partial \phi}{\partial x_i} = \partial_i \phi = \nabla \phi = \Big[  \
 
 #### Derivative of an element-wise function
 
-We often come across **element-wise functions** such as `Relu`. An element-wise, vector-valued function $\bm{f}(\bm{x})$ is defined such that
+We often come across **element-wise functions** such as `Relu`. An element-wise, vector-valued function $\mathbf{f}(\mathbf{x})$ is defined such that
 
 
-$$f(\bm{x})_i = f(x_i)$$
+$$f(\mathbf{x})_i = f(x_i)$$
 
 This is particularly convenient when it comes to getting the Jacobian of this type of function:
 
-$$ \frac{\partial \bm{f(x)}}{\partial \bm{x}} = \frac{\partial f(\bm{x})_i}{\partial x_j} = \frac{f(x_i)}{\partial x_j}$$
+$$ \frac{\partial \mathbf{f(x)}}{\partial \mathbf{x}} = \frac{\partial f(\mathbf{x})_i}{\partial x_j} = \frac{f(x_i)}{\partial x_j}$$
 
-$$\frac{\partial \bm{f(x)}}{\partial \bm{x}} =  \begin{bmatrix}
+$$\frac{\partial \mathbf{f(x)}}{\partial \mathbf{x}} =  \begin{bmatrix}
            \frac{\partial f(x_1)}{\partial x_1} &  \frac{\partial f(x_1)}{\partial x_2}& \dots & \frac{\partial f(x_1)}{\partial x_M} \\
            \frac{\partial f(x_2)}{\partial x_1} &  \frac{\partial f(x_2)}{\partial x_2}  \\
            \vdots \\
@@ -113,33 +112,33 @@ $$\frac{\partial \bm{f(x)}}{\partial \bm{x}} =  \begin{bmatrix}
 
 But because we are dealing with an element-wise operator, the derivative is non-zero **only** for the terms where $i=j$. This leaves us with:
 
-$$\frac{\partial \bm{f(x)}}{\partial \bm{x}} =  \begin{bmatrix}
+$$\frac{\partial \mathbf{f(x)}}{\partial \mathbf{x}} =  \begin{bmatrix}
            \frac{\partial f(x_1)}{\partial x_1} &  0 & \dots  \\
            0 &  \frac{\partial f(x_2)}{\partial x_2}  \\
            \vdots \\
          \end{bmatrix}$$
 
-which is a diagonal matrix $\mathtt{diag}(\frac{\partial \bm{f(x)}}{\partial \bm{x}})$. We can then write the diagonal as a vector $f'(x)_i$ instead of a matrix!
+which is a diagonal matrix $\mathtt{diag}(\frac{\partial \mathbf{f(x)}}{\partial \mathbf{x}})$. We can then write the diagonal as a vector $f'(x)_i$ instead of a matrix!
 
 #### Example 1
 
 
-Given an element-wise function $\phi(\bm{u})$, where $\bm{u}=\bm{W x}$, what are $\frac{\partial \bm{\phi}}{\partial \bm{W}}$ and $\frac{\partial \bm{\phi}}{\partial \bm{x}}$?
+Given an element-wise function $\phi(\mathbf{u})$, where $\mathbf{u}=\mathbf{W x}$, what are $\frac{\partial \mathbf{\phi}}{\partial \mathbf{W}}$ and $\frac{\partial \mathbf{\phi}}{\partial \mathbf{x}}$?
 
 
 
 #### Example 2
 
-Backpropagation is used when training neural networks in a supervised learning setting to change the weights of a network layer based on the error made by the network during training. Python packages such as sci kit learn (`sklearn`) and PyTorch often define layers as $\bm{x}^\top \bm{W}$ instead of $\bm{Wx}$.
+Backpropagation is used when training neural networks in a supervised learning setting to change the weights of a network layer based on the error made by the network during training. Python packages such as sci kit learn (`sklearn`) and PyTorch often define layers as $\mathbf{x}^\top \mathbf{W}$ instead of $\mathbf{Wx}$.
 
 Note that we can consistently use the **numerator** notation when working with Jacobians.
 
-So, given an element-wise function $\phi(\bm{u})$, where $\bm{u}=\bm{x}^\top \bm{W}$, what are $\frac{\partial \bm{\phi}}{\partial \bm{W}}$ and $\frac{\partial \bm{\phi}}{\partial \bm{x}}$?
+So, given an element-wise function $\phi(\mathbf{u})$, where $\mathbf{u}=\mathbf{x}^\top \mathbf{W}$, what are $\frac{\partial \mathbf{\phi}}{\partial \mathbf{W}}$ and $\frac{\partial \mathbf{\phi}}{\partial \mathbf{x}}$?
 
 #### Example 3
 
 
-Given an element-wise function $\phi(\bm{u})$, where $\bm{u}=\bm{V W x}$, what is $\frac{\partial \bm{\phi}}{\partial \bm{W}}$? How do the dimensions work out?
+Given an element-wise function $\phi(\mathbf{u})$, where $\mathbf{u}=\mathbf{V W x}$, what is $\frac{\partial \mathbf{\phi}}{\partial \mathbf{W}}$? How do the dimensions work out?
 
 
 
@@ -149,7 +148,7 @@ Given an element-wise function $\phi(\bm{u})$, where $\bm{u}=\bm{V W x}$, what i
 "Vanilla" Recurrent neural networks (RNNs) often have the following form:
 
 $$
-\tau \frac{d\bm{h}(t)}{dt} = -\bm{h}(t) + \phi(\bm{W} \cdot \bm{h}(t) ) + \bm{\eta}(t)
+\tau \frac{d\mathbf{h}(t)}{dt} = -\mathbf{h}(t) + \phi(\mathbf{W} \cdot \mathbf{h}(t) ) + \mathbf{\eta}(t)
 $$
 
 It is convenient to write this in index notation:
@@ -158,11 +157,11 @@ $$
 \tau \frac{dh_i(t)}{dt} = -h_i(t) + \phi \Big( \sum_k W_{ik}h_k(t) \Big) + \eta_i(t)
 $$
 
-Suppose we want to linearize about the fixed point $\bm{h}^*$. Let $\bm{h} = \bm{h}^* + \delta \bm{h}$
+Suppose we want to linearize about the fixed point $\mathbf{h}^*$. Let $\mathbf{h} = \mathbf{h}^* + \delta \mathbf{h}$
 
 
 $$
-\phi(\bm{W}(\bm{h}^* + \delta \bm{h})) \approx \phi(\bm{W}\bm{h}^*) + \bm{\phi'}(\bm{W}\bm{h}^*) \odot (\bm{W} \delta\bm{ h} )
+\phi(\mathbf{W}(\mathbf{h}^* + \delta \mathbf{h})) \approx \phi(\mathbf{W}\mathbf{h}^*) + \mathbf{\phi'}(\mathbf{W}\mathbf{h}^*) \odot (\mathbf{W} \delta\mathbf{ h} )
 $$
 
 Using index notation, this would be
@@ -174,14 +173,14 @@ $$
 Plugging this back into the RNN equation, we get
 
 $$
-\tau \frac{d}{dt}(\bm{h}^*+\delta \bm{h}) = -(\bm{h}^*+\delta \bm{h}) + \bm{\phi}(\bm{W} (\bm{h}^* + \delta \bm{h})) + \bm{\eta}(t)
+\tau \frac{d}{dt}(\mathbf{h}^*+\delta \mathbf{h}) = -(\mathbf{h}^*+\delta \mathbf{h}) + \mathbf{\phi}(\mathbf{W} (\mathbf{h}^* + \delta \mathbf{h})) + \mathbf{\eta}(t)
 $$
 
 $$
-\tau \frac{d}{dt}(\delta \bm{h}) = -\delta \bm{h} - \bm{h}^* + \bm{\phi}(\bm{Wh}^*) + \bm{\phi'}(\bm{Wh}^*) \odot (\bm{W} \delta\bm{h})  + \bm{\eta}(t)
+\tau \frac{d}{dt}(\delta \mathbf{h}) = -\delta \v{h} - \mathbf{h}^* + \mathbf{\phi}(\mathbf{Wh}^*) + \mathbf{\phi'}(\mathbf{Wh}^*) \odot (\mathbf{W} \delta\mathbf{h})  + \mathbf{\eta}(t)
 $$
 
-Note that $-\bm{h}^*$ is *not* cancelled by the term $\bm{\phi}(\bm{Wh}^*)$.
+Note that $-\mathbf{h}^*$ is *not* cancelled by the term $\mathbf{\phi}(\mathbf{Wh}^*)$.
 
 
 
