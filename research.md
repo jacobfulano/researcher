@@ -16,7 +16,7 @@ I am currently working with [Larry Abbott](https://zuckermaninstitute.columbia.e
 
 ## Posters
 
-1. **Neural signatures of supervised learning vs. reinforcement learning in brain-machine interface tasks** [Cosyne (February 2021)](http://www.cosyne.org/c/index.php?title=Cosyne2021_Program) Jacob Portes, James Murray
+1. **"Neural signatures of supervised learning vs. reinforcement learning in brain-machine interface tasks"** [Cosyne (February 2021)](http://www.cosyne.org/c/index.php?title=Cosyne2021_Program) Jacob Portes, James Murray
 
 2.	**“An Anatomically and Functionally Constrained Model of Direction Selectivity in Drosophila”** Cosyne (February 2020) Jacob Portes\*, Jessica Kohn\*, Larry Abbott, Rudy Behnia (*equal contribution)
 
