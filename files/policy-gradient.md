@@ -138,33 +138,7 @@ R(t) = -(\text{distance to target at end of trial})^2 - \lambda |\textbf{y}^t|^2
 2. **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** Miconi 2017
 3. **Local online learning in recurrent networks with random feedback (RFLO)** Murray 2019
 
-           ./\
-        .´\/__\
-     .´\´\/__|_\
-  .´\ \´\/_|__|_\
- \´\´\´\/|__|__|_\
-  \´\´\/__|__|__|_\
-   \´\/_|__|__|__|_\
-    \/|__|__|__|__|_\
 
-
-          ____
-        .´\___\
-     .´\´\/__|_\
-  .´\ \´\/_|__|_\
- \´\´\´\/|__|__|_\
-  \´\´\/__|__|__|_\
-   \´\/_|__|__|__|_\
-    \/|__|__|__|__|_\
-
-
-        .─────.
-     .´\´\_____\
-  .´\ \´\/_|__|_\
- \´\´\´\/|__|__|_\
-  \´\´\/__|__|__|_\
-   \´\/_|__|__|__|_\
-    \/|__|__|__|__|_\
 		      ________
 		    .´\  ____ \
 		 .´\ \´\_______\
