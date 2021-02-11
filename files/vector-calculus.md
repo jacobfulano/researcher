@@ -226,7 +226,7 @@ For more details, see the original paper: Murray, James M. **"Local online learn
 * ["A Primer on Index Notation" by John Crimaldi](http://pages.erau.edu/~reynodb2/ep410/Crimaldi_2006_Index_Notation_C.pdf)
 
 
-.------.
+       .------.
       (        )
       |~------~|
       |        | .----.
@@ -240,7 +240,7 @@ For more details, see the original paper: Murray, James M. **"Local online learn
       |  (        |       |
       |  |~------~|       |
       |  |        |       |
-_..----------..|  |  _.-----._     |
+    ..----------..|  |   .-----._     |
 .-~                ~-..-         -.   |
 |.                  .||-_       _-|   | axiac
 |"-..____________..-"||  ~-----~  |   |

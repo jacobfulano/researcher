@@ -3,7 +3,7 @@ layout: default
 ---
 
 
-There are many ways to implement reinforcement learning in neural networks. A classic policy-gradient based method is REINFORCE [Williams 1992]; a more recent, more "biologically plausible" version is expounded in the paper **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** [Miconi 2017]. The general rule is essentially Hebbian plasticity modulated by reward prediction error (RPE), and looks something like this:
+There are many ways to implement reinforcement learning (RL) in recurrent neural networks (RNNs). A classic policy-gradient based method is REINFORCE [Williams 1992]; a more recent, more "biologically plausible" version is expounded in the paper **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** [Miconi 2017]. The general rule is essentially Hebbian plasticity modulated by reward prediction error (RPE), and looks something like this:
 
 $$ \Delta W_{ij} = \eta (R-\bar{R}) e_{ij}$$
 
@@ -15,10 +15,10 @@ $$ \bar{e}_{ij}(t)_ =  \bar{e}_{ij}(t-1) + \phi( r_j(t-1) \cdot ((x_i(t) - \bar{
 
 This is essentially saying eligibility trace = output of neuron j $\times$ output of neuron i, which is Hebbian. Some extra details include a nonlinear function $\phi$, and a running average of recent activity $\bar{x}_i$ from neuron i (which has the effect of tracking short term/recent fluctuations).
 
+There are a few nice things about this reinforcement learning (RL) weight update: one is that rewards only need to be given at the _end_ of the trial, unlike supervised learning (SL) where an error signal needs to be fed to the network at every time step.
 
 
-
-
+How might we derive this learning rule for RNNs from "first principles?" One way to do this is to start with the policy-gradient theorem, and _remove_ nonlocal interaction terms in the RNN update. I go into more detail below:
 
 
 ## Policy Parameterization for Continuous Actions
@@ -166,7 +166,33 @@ we can get a recursion relation
 2. **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** Miconi 2017
 3. **Local online learning in recurrent networks with random feedback (RFLO)** Murray 2019
 
+           ./\
+        .´\/__\
+     .´\´\/__|_\
+  .´\ \´\/_|__|_\
+ \´\´\´\/|__|__|_\
+  \´\´\/__|__|__|_\
+   \´\/_|__|__|__|_\
+    \/|__|__|__|__|_\
 
+
+          ____
+        .´\___\
+     .´\´\/__|_\
+  .´\ \´\/_|__|_\
+ \´\´\´\/|__|__|_\
+  \´\´\/__|__|__|_\
+   \´\/_|__|__|__|_\
+    \/|__|__|__|__|_\
+
+
+        .─────.
+     .´\´\_____\
+  .´\ \´\/_|__|_\
+ \´\´\´\/|__|__|_\
+  \´\´\/__|__|__|_\
+   \´\/_|__|__|__|_\
+    \/|__|__|__|__|_\
 		      ________
 		    .´\  ____ \
 		 .´\ \´\_______\
@@ -197,3 +223,5 @@ we can get a recursion relation
 		 \´\ \_______´_\ \
 		  \´\_____________\
 		   \/|__|__|__|__|_\
+
+[ascii art](https://stonestoryrpg.com/ascii_tutorial.html)
