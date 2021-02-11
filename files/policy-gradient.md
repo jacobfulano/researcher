@@ -18,7 +18,7 @@ This is essentially saying eligibility trace = output of neuron j $\times$ outpu
 There are a few nice things about this reinforcement learning (RL) weight update: one is that rewards only need to be given at the _end_ of the trial, unlike supervised learning (SL) where an error signal needs to be fed to the network at every time step.
 
 
-How might we derive this learning rule for RNNs from "first principles?" One way to do this is to start with the policy-gradient theorem, and _remove_ nonlocal interaction terms in the RNN update. I go into more detail below:
+How might we derive this learning rule for RNNs from "first principles?" One way to do this is to start with the policy-gradient theorem, and _remove_ nonlocal interaction terms in the RNN update (local meaning that a neuron can only receive signals/information from other neurons it is connected to). I go into more detail below:
 
 
 ## Policy Parameterization for Continuous Actions
@@ -51,9 +51,8 @@ where the policy $\pi(z|t,W)$ is a scalar performance measure and $\nabla \ln(\p
 
 In order to ensure exploration, some noise is added to the action such that the policy is not deterministic. Adding some noise to the hidden/recurrent layer:
 
-$$
-z = \mu(t,W) + \sigma \xi
-$$
+$$ z = \mu(t,W) + \sigma \xi $$
+
 We can now calculate the main term for our update rule:
 
 \begin{equation}
@@ -83,42 +82,45 @@ Looking at the right-most term and switching to summation notation:
 ## Enforcing Local Update
 
 
-The term $ \frac{\partial h_j(t-1)}{\partial W_{ab}} $ includes both _local_ and _nonlocal_ terms [Murray 2019]. However, we can separate the local and nonlocal weights and take the derivative:
+The term $ \frac{\partial h_j(t-1)}{\partial W_{ab}} $ includes both _local_ and _nonlocal_ terms [Murray 2019]. If we are interested in a biologically plausible learning rule, we only want _local_ terms. However, we can separate the local and nonlocal weights and take the derivative:
 
 \begin{equation}
 = \frac{\partial}{\partial W_{ab}}\Big[  \phi \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big)_{i \neq a}_ + \delta_{ia} \phi \Big(\sum_j W_{aj} \cdot h_j(t-1) \Big) \Big]
 \end{equation}
+
 The derivative of the local term is simply:
 
 \begin{equation}
     \frac{\partial}{\partial W_{ab}}\Big[ \delta_{ia} \phi \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big) \Big] = \delta_{ia} \phi' \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big) h_b(t-1)
 \end{equation}
+
 Keeping only the expression for the local terms, we arrive at:
 
 \begin{equation}
     \frac{\partial}{\partial W_{ab}} \ln(\pi(z_i|t,W)) = -\frac{1}{\sigma} \xi \Bigg( (1-\frac{1}{\tau}) \frac{\partial h_i(t-1) }{\partial W_{ab}} - \frac{1}{\tau}  \delta_{ia} \phi' \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big) h_b(t-1) \Bigg)
 \end{equation}
+
 Following RFLO, the recursive relation of the derivative with only _local_ terms is:
 
 \begin{equation}
     \frac{\partial h_i(t-1) }{\partial W_{ab}}  = (1-\frac{1}{\tau}) \frac{\partial h_i(t-2) }{\partial W_{ab}} - \frac{1}{\tau}  \delta_{ia} \phi' \Big(\sum_j W_{ij} \cdot h_j(t-2) \Big) h_b(t-2)
 \end{equation}
-This therefore defines the eligibility trace. These two coupled, recursive equations can be expressed as:
+
+This therefore defines the eligibility trace! These two coupled, recursive equations can be expressed as:
 
 \begin{equation}
     \overline{ \nabla_{W} \ln(\pi(z|t,W))}
 \end{equation}
+
 Finally, we can construct an update rule:
 
 \begin{equation}
     \Delta W_{ij} = \eta (R(t) - \bar{R}(t)) \overline{ \nabla_{W} \ln(\pi(z|t,W))}
 \end{equation}
-where $(R(t) - \bar{R}(t))$ is the "return."
-
-where $R(t)$ is:
+where $(R(t) - \bar{R}(t))$ is the "return," and reward $R(t)$ is defined at the end of the trial as:
 
 \begin{equation}
-R(t) = -(\text{distance to target})^2 - \lambda |\textbf{y}^t|^2
+R(t) = -(\text{distance to target at end of trial})^2 - \lambda |\textbf{y}^t|^2
 \end{equation}•
 
 \begin{equation}
@@ -127,36 +129,6 @@ R(t) = -(\text{distance to target})^2 - \lambda |\textbf{y}^t|^2
 
 
 
------------
-
-## RFLO
-
-\begin{equation}
-h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}{ij} h_j(t)+\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
-\end{equation}
-
-\begin{equation}
-y_k(t) = \sum W^{\text{out}}_{ki} h_i(t)
-\end{equation}
-
-The loss is defined as:
-
-\begin{equation}
-L = \frac{1}{2T} \sum_{t=1}^T \sum_{k=1}^{N_y} \Big[ y^*_k(t) - y_k(t) \Big]^2
-\end{equation}
-
-Taking the derivative with respect to the recurrent weights
-
-\begin{equation}
-\frac{\partial L}{\partial W_{ab}} = -\frac{1}{T} \sum_{t=1}^T \sum_{k=1}^{N_y} \big[  (\mathbf{W}^{\text{out}})^{\top} \epsilon(t)  \big]_j_ \frac{\partial h_j(t)}{\partial W_{ab}}
-\end{equation}
-
-
-we can get a recursion relation
-
-\begin{equation}
-\frac{\partial h_j(t)}{\partial W_{ab}}  = \big(1- \frac{1}{\tau} \big) \frac{\partial h_j(t-1)}{\partial W_{ab}} + \frac{1}{\tau} \delta_{ja} \phi'( u_a(t)) h_b(t-1)  + \frac{1}{\tau} \sum_k \phi' (u_j(t)) W_{jk} \frac{\partial h_k(t-1)}{\partial W_{ab}}
-\end{equation}
 
 
 
