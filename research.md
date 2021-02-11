@@ -4,7 +4,7 @@ layout: default
 
 ## Research
 
-I am currently working with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* [eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=).
+I am currently working with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in [*Drosophila* eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=).
 
 I am also working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
