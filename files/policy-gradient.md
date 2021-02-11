@@ -18,8 +18,7 @@ This is essentially saying eligibility trace = output of neuron j $\times$ outpu
 ## RFLO
 
 \begin{equation}
-h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}_{ij}  h_j(t) +   
-\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
+h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}_{ij}_ h_j(t)+\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
 \end{equation}
 
 \begin{equation}
