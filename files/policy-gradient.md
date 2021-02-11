@@ -3,6 +3,13 @@ layout: default
 ---
 
 
+There are many ways to implement reinforcement learning in neural networks. A classic policy-gradient based method is REINFORCE [Williams 1992]; a more recent, more "biologically plausible" version is expounded in the paper **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** [Miconi 2017]. The general rule is essentially Hebbian plasticity modulated by reward prediction error (RPE), and looks something like this:
+
+$$ \Delta W_{ij} = \eta (R-\bar{R}) e_{ij}$$
+
+where recurrent RNN weights are updated by multiplying the deviation of reward $R$ from the _expected_ reward $\bar{R}$ (i.e. the RPE) and the eligibility trace $e_{ij}$. So what is this eligibility trace?
+
+## RFLO
 
 \begin{equation}
 h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{\text{rec}}_{ij} h_j(t) + \sum W^{\text{in}}_{ij} x_j(t+1)  \Big)   \Big]
