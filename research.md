@@ -13,7 +13,7 @@ I am also working on biologically plausible learning in recurrent neural network
 
 1. More coming soon!
 
-2. **“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”** Proceedings of the National Academy of Sciences (PNAS) Publication (2016) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman
+2. **“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”** Proceedings of the National Academy of Sciences (PNAS) (2016) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman
 
 
 ## Posters
