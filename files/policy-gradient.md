@@ -106,16 +106,18 @@ Following RFLO, the recursive relation of the derivative with only _local_ terms
     \frac{\partial h_i(t-1) }{\partial W_{ab}}  = (1-\frac{1}{\tau}) \frac{\partial h_i(t-2) }{\partial W_{ab}} - \frac{1}{\tau}  \delta_{ia} \phi' \Big(\sum_j W_{ij} \cdot h_j(t-2) \Big) h_b(t-2)
 \end{equation}
 
-This therefore defines the eligibility trace! These two coupled, recursive equations can be expressed as:
+This therefore defines the eligibility trace! While this eligibility trace is not exactly the same as the Miconi 2017 rule above, it essentially contains a postsynaptic term $\phi'(...)$ multiplied by a presynaptic term $h_b(t)$, with exploratory noise $\xi$
+
+These two coupled, recursive equations can be expressed as:
 
 \begin{equation}
-    \overline{ \nabla_{W} \ln(\pi(z|t,W))}
+    \bar{e}_{ij}(t)_ = \overline{ \nabla_{W} \ln(\pi(z|t,W))}
 \end{equation}
 
 Finally, we can construct an update rule:
 
 \begin{equation}
-    \Delta W_{ij} = \eta (R(t) - \bar{R}(t)) \overline{ \nabla_{W} \ln(\pi(z|t,W))}
+    \Delta W_{ij} = \eta (R(t) - \bar{R}(t)) e_{ij}
 \end{equation}
 where $(R(t) - \bar{R}(t))$ is the "return," and reward $R(t)$ is defined at the end of the trial as:
 
