@@ -162,5 +162,5 @@ we can get a recursion relation
 ## References
 
 [1] **Reinforcement Learning** Sutton and Barto, 2018
-[2] ** ** Miconi 2017
-[3] **RFLO** Murray 2019
+[2] **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** Miconi 2017
+[3] **Local online learning in recurrent networks with random feedback (RFLO)** Murray 2019
