@@ -10,7 +10,7 @@ html {
     padding: 0;
 }
 body {
-    margin: 0;
+    margin: 0 auto;
     font-family: 'Raleway';
     font-size: 18px;
     position: relative;
@@ -68,7 +68,7 @@ hr {
 
 .container {
     max-width: $max-width;
-    margin: auto;
+    margin: 0 auto;
 }
 .wrapper {
     min-height: 100%;
