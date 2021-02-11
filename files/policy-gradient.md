@@ -111,14 +111,14 @@ This therefore defines the eligibility trace. These two coupled, recursive equat
 Finally, we can construct an update rule:
 
 \begin{equation}
-    \Delta W_{ij} = \eta (R^t - \bar{R}^t) \overline{ \nabla_{W} \ln(\pi(z|t,W))}
+    \Delta W_{ij} = \eta (R(t) - \bar{R}(t)) \overline{ \nabla_{W} \ln(\pi(z|t,W))}
 \end{equation}
-where $(R^t - \bar{R}^t)$ is the return.
+where $(R(t) - \bar{R}(t))$ is the "return."
 
-where $R^T$ is:
+where $R(t)$ is:
 
 \begin{equation}
-R^t = -(\text{distance to target})^2 - \lambda |\textbf{y}^t|^2
+R(t) = -(\text{distance to target})^2 - \lambda |\textbf{y}^t|^2
 \end{equation}•
 
 \begin{equation}
