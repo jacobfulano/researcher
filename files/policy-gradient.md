@@ -39,12 +39,13 @@ To produce a policy parameterization,  the policy $\pi(z)$  can be defined by a 
 \begin{equation}
     \pi(z|t,W)  = \frac{1}{\sqrt{2 \pi} \sigma} e^{-(z-\mu(t,W))^2/(2\sigma^2)}
 \end{equation}
-The \textbf{policy gradient theorem} allows us to change the policy parameter in a way that ensures improvement by some scalar performance measure. The REINFORCE algorithm is based on the policy gradient theorem, and updates the parameters (in this case $W$ at time $t$) only based on the \textit{action} taken at time $t$ \cite{sutton2018reinforcement}. Using REINFORCE, we want to update our weights $W$ in the following manner:
+
+The _policy gradient theorem_ allows us to change the policy parameter in a way that ensures improvement by some scalar performance measure. The REINFORCE algorithm is based on the policy gradient theorem, and updates the parameters (in this case $W$ at time $t$) only based on the _action_ taken at time $t$ [Sutton and Barto 2018]. Using REINFORCE [Williams 1992], we want to update our weights $W$ in the following manner:
 
 \begin{equation}
 \Delta W \propto \nabla \ln(\pi(z|t,W))
 \end{equation}
-where the policy $\pi(z|t,W)$ is a scalar performance measure and $\nabla \ln(\pi(z|t,W))$ is a stochastic estimate whose expectation approximates the gradient of the performance measure with respect to $W$ \cite{sutton2018reinforcement}.
+where the policy $\pi(z|t,W)$ is a scalar performance measure and $\nabla \ln(\pi(z|t,W))$ is a stochastic estimate whose expectation approximates the gradient of the performance measure with respect to $W$ [Sutton and Barto 2018].
 
 
 
