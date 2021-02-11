@@ -86,7 +86,7 @@ Looking at the right-most term and switching to summation notation:
 The term $ \frac{\partial h_j(t-1)}{\partial W_{ab}} $ includes both _local_ and _nonlocal_ terms [Murray 2019]. However, we can separate the local and nonlocal weights and take the derivative:
 
 \begin{equation}
-    = \frac{\partial}{\partial W_{ab}}\Big[  \phi \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big)_{i \neq a}_ + \delta_{ia} \phi \Big(\sum_j W_{aj} \cdot h_j(t-1) \Big) \Big]
+= \frac{\partial}{\partial W_{ab}}\Big[  \phi \Big(\sum_j W_{ij} \cdot h_j(t-1) \Big)_{i \neq a}_ + \delta_{ia} \phi \Big(\sum_j W_{aj} \cdot h_j(t-1) \Big) \Big]
 \end{equation}
 The derivative of the local term is simply:
 
