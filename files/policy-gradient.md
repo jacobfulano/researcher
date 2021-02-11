@@ -4,6 +4,8 @@ layout: default
 
 How might we derive a biologically plausible, reinforcement-based learning rule for recurrent neural networks?
 
+## Reward Modulated Hebbian Plasticity
+
 There are many ways to implement reinforcement learning (RL) in recurrent neural networks (RNNs). A classic policy-gradient based method is REINFORCE [Williams 1992]; a more recent, more "biologically plausible" version is expounded in the paper **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** [Miconi 2017]. The general rule is essentially Hebbian plasticity modulated by reward prediction error (RPE), and looks something like this:
 
 $$ \Delta W_{ij} = \eta (R-\bar{R}) \bar{e}_{ij}$$
