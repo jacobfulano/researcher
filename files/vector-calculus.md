@@ -224,3 +224,26 @@ For more details, see the original paper: Murray, James M. **"Local online learn
 * [Stanford CS224N Notes by Kevin Clark "Computing Neural Network Gradients"](https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf)
 * ["The Matrix Calculus You Need For Deep Learning" from explained.ai](https://explained.ai/matrix-calculus/)
 * ["A Primer on Index Notation" by John Crimaldi](http://pages.erau.edu/~reynodb2/ep410/Crimaldi_2006_Index_Notation_C.pdf)
+
+
+.------.
+      (        )
+      |~------~|
+      |        | .----.
+      |         (      )
+      |        ||~----~|
+      |        ||      |
+      |        ||  .-----.
+      |        || |._____.'
+      |        || |       |
+      |   .------.|       |
+      |  (        |       |
+      |  |~------~|       |
+      |  |        |       |
+_..----------..|  |  _.-----._     |
+.-~                ~-..-         -.   |
+|.                  .||-_       _-|   | axiac
+|"-..____________..-"||  ~-----~  |   |
+|                   .`|           |--"
+"-..____________..-" `._       _.'
+             "-----"
