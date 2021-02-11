@@ -132,7 +132,7 @@ R^t = -(\text{distance to target})^2 - \lambda |\textbf{y}^t|^2
 ## RFLO
 
 \begin{equation}
-h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}_{ij}_ h_j(t)+\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
+h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}{ij} h_j(t)+\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
 \end{equation}
 
 \begin{equation}
