@@ -2,6 +2,7 @@
 layout: default
 ---
 
+How might we derive a biologically plausible, reinforcement-based learning rule for recurrent neural networks?
 
 There are many ways to implement reinforcement learning (RL) in recurrent neural networks (RNNs). A classic policy-gradient based method is REINFORCE [Williams 1992]; a more recent, more "biologically plausible" version is expounded in the paper **Biologically plausible learning in recurrent neural networks reproduces neural dynamics observed during cognitive tasks** [Miconi 2017]. The general rule is essentially Hebbian plasticity modulated by reward prediction error (RPE), and looks something like this:
 
@@ -104,7 +105,7 @@ Following RFLO, the recursive relation of the derivative with only _local_ terms
     \frac{\partial h_i(t-1) }{\partial W_{ab}}  = (1-\frac{1}{\tau}) \frac{\partial h_i(t-2) }{\partial W_{ab}} - \frac{1}{\tau}  \delta_{ia} \phi' \Big(\sum_j W_{ij} \cdot h_j(t-2) \Big) h_b(t-2)
 \end{equation}
 
-This therefore defines the eligibility trace! While this eligibility trace is not exactly the same as the Miconi 2017 rule above, it essentially contains a postsynaptic term $\phi'(...)$ multiplied by a presynaptic term $h_b(t)$, with exploratory noise $\xi$
+This therefore defines the eligibility trace! While this eligibility trace is not exactly the same as the Miconi 2017 rule above, it essentially contains a "noisy" postsynaptic term $\xi \phi'(...)$ multiplied by a presynaptic term $h_b(t)$ (the noise $\xi$ is important for exploration!)
 
 These two coupled, recursive equations can be expressed as:
 
@@ -122,6 +123,8 @@ where $(R(t) - \bar{R}(t))$ is the "return," and reward $R(t)$ is defined at the
 \begin{equation}
 R(t) = -(\text{distance to target at end of trial})^2 - \lambda |\textbf{y}^t|^2
 \end{equation}•
+
+We then update the recurrent weights with
 
 \begin{equation}
     W_{ij}(t+1) =  W{ij}(t) + \Delta W_{ij}
