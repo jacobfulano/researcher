@@ -11,7 +11,7 @@ where recurrent RNN weights are updated by multiplying the deviation of reward $
 
 What's neat is that "every neuron from neuron j to neuron i accumulates a _potential_ Hebbian weight change." Weights are only updated at the _end_ of the trial, depending on the RPE:
 
-$$ \bar{E}_{ij}(t)_ =  \bar{E}_{ij}(t-1) + \phi( r_j(t-1) \cdot ((x_i(t) - \bar{x}_i))  )$$
+$$ \bar{e}_{ij}(t)_ =  \bar{e}_{ij}(t-1) + \phi( r_j(t-1) \cdot ((x_i(t) - \bar{x}_i))  )$$
 
 This is essentially saying eligibility trace = output of neuron j $\times$ output of neuron i, which is Hebbian. Some extra details include a nonlinear function $\phi$, and a running average of recent activity $\bar{x}_i$ from neuron i (which has the effect of tracking short term/recent fluctuations).
 
