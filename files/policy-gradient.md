@@ -7,12 +7,17 @@ There are many ways to implement reinforcement learning in neural networks. A cl
 
 $$ \Delta W_{ij} = \eta (R-\bar{R}) e_{ij}$$
 
-where recurrent RNN weights are updated by multiplying the deviation of reward $R$ from the _expected_ reward $\bar{R}$ (i.e. the RPE) and the eligibility trace $e_{ij}$. So what is this eligibility trace?
+where recurrent RNN weights are updated by multiplying the deviation of reward $R$ from the _expected_ reward $\bar{R}$ (i.e. the RPE) and the eligibility trace $\bar{E}_{ij}$. So what is this eligibility trace?
+
+What's neat is that "every neuron from neuron j to neuron i accumulates a _potential_ Hebbian weight change." Weights are only updated at the _end_ of the trial, depending on the RPE:
+
+$$ \bar{E}_{ij}(t)_ =  \bar{E}_{ij}(t-1) + \phi( r_j(t-1) \cdot ((x_i(t) - \bar{x}_i))  )$$
 
 ## RFLO
 
 \begin{equation}
-h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{\text{rec}}_{ij} h_j(t) + \sum W^{\text{in}}_{ij} x_j(t+1)  \Big)   \Big]
+h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}_{ij}  h_j(t) +   
+\sum W^{in}_{ij} x_j(t+1)  \Big)   \Big]
 \end{equation}
 
 \begin{equation}
@@ -26,7 +31,8 @@ L = \frac{1}{2T} \sum_{t=1}^T \sum_{k=1}^{N_y} \Big[ y^*_k(t) - y_k(t) \Big]^2
 Taking the derivative with respect to the recurrent weights
 
 \begin{equation}
-\frac{\partial L}{\partial W_{ab}} = -\frac{1}{T} \sum_{t=1}^T \sum_{k=1}^{N_y} \big[  (\mathbf{W}^{\text{out}})^{\top} \epsilon(t)  \big]_j \frac{\partial h_j(t)}{\partial W_{ab}}
+\frac{\partial L}{\partial W_{ab}} = -\frac{1}{T} \sum_{t=1}^T \sum_{k=1}^{N_y} \big[  (\mathbf{W}^{\text{out}})^{\top} \epsilon(t)  \big]_j
+ \frac{\partial h_j(t)}{\partial W_{ab}}
 \end{equation}
 
 
