@@ -139,6 +139,8 @@ h_i(t+1) = h_i(t) + \frac{1}{\tau} \Big[  -h_i(t) + \phi \Big( \sum W^{rec}{ij} 
 y_k(t) = \sum W^{\text{out}}_{ki} h_i(t)
 \end{equation}
 
+The loss is defined as:
+
 \begin{equation}
 L = \frac{1}{2T} \sum_{t=1}^T \sum_{k=1}^{N_y} \Big[ y^*_k(t) - y_k(t) \Big]^2
 \end{equation}
@@ -146,8 +148,7 @@ L = \frac{1}{2T} \sum_{t=1}^T \sum_{k=1}^{N_y} \Big[ y^*_k(t) - y_k(t) \Big]^2
 Taking the derivative with respect to the recurrent weights
 
 \begin{equation}
-\frac{\partial L}{\partial W_{ab}} = -\frac{1}{T} \sum_{t=1}^T \sum_{k=1}^{N_y} \big[  (\mathbf{W}^{\text{out}})^{\top} \epsilon(t)  \big]_j
- \frac{\partial h_j(t)}{\partial W_{ab}}
+\frac{\partial L}{\partial W_{ab}} = -\frac{1}{T} \sum_{t=1}^T \sum_{k=1}^{N_y} \big[  (\mathbf{W}^{\text{out}})^{\top} \epsilon(t)  \big]_j_ \frac{\partial h_j(t)}{\partial W_{ab}}
 \end{equation}
 
 
