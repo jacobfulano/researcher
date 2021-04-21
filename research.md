@@ -4,16 +4,16 @@ layout: default
 
 ## Research
 
-I am currently working with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in [*Drosophila* eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=).
+I am currently working with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in [*Drosophila* eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=). We recently posted our preprint to bioRxiv: [State and stimulus dependence reconcile motion computation and the Drosophila connectome](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1)
 
 I am also working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
 
 ## Publications
 
-1. More coming soon!
+1. **"State and stimulus dependence reconcile motion computation and the Drosophila connectome"** Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, [bioRxiv preprint](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) (\*equal contribution)
 
-2. **“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”** Proceedings of the National Academy of Sciences (PNAS) (2016) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman
+2. **“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”** Proceedings of the National Academy of Sciences (PNAS) (2016) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman ([link](https://www.pnas.org/content/113/52/E8463/))
 
 
 ## Posters
