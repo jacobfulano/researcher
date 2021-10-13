@@ -8,6 +8,8 @@ I am currently working with [Rudy Behnia](http://behnialab.neuroscience.columbia
 
 I am also working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
+As a ML Research Intern at [MosaicML](mosaicml.com), I worked on exotic learning rate schedules for speeding up neural network training.
+
 
 ## Publications
 
