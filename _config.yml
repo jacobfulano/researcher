@@ -25,7 +25,5 @@ nav:
    link: "/teaching"
  - name: "Notes"
    link: "/notes"
- # - name: "Resume"
- #   link: "resume.pdf"
  - name: "Code"
    link: "/code"
