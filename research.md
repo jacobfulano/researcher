@@ -6,7 +6,7 @@ layout: default
 
 I am currently working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
-As a ML Research Intern at [MosaicML](mosaicml.com), I worked on exotic learning rate schedules for speeding up neural network training.
+As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on exotic learning rate schedules for speeding up neural network training.
 
 I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in [*Drosophila* eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=). Our preprint is on bioRxiv, and it will be published soon: [State and stimulus dependence reconcile motion computation and the Drosophila connectome](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1)
 
