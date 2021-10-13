@@ -2,4 +2,6 @@
 layout: default
 ---
 
-We maintain the [Behnia Lab](http://behnialab.neuroscience.columbia.edu/) code repository on GitLab. My personal github can be found at [github.com/jacobfulano](https://github.com/jacobfulano)
+My personal github can be found at [github.com/jacobfulano](https://github.com/jacobfulano), and my work in the Drosophila visual system (Current Biology 2021) can be found in the [Behnia Lab](https://gitlab.com/rbehnialab/flexible-filtering) repository on GitLab. 
+
+I also contribute to the [mosaicml](https://github.com/mosaicml/composer) package, a library of speed-up and accuracy boosting methods built on PyTorch.
