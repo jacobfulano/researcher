@@ -8,13 +8,13 @@ I am currently working on biologically plausible learning in recurrent neural ne
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on exotic learning rate schedules for speeding up neural network training.
 
-I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in [*Drosophila* eyes](https://media.istockphoto.com/photos/male-fruit-fly-on-a-blade-of-grass-macro-picture-id137448810?k=6&m=137448810&s=612x612&w=0&h=_3fOj5SgJKwo143Px8X42_rDTh6El7GejZdfTdKtRm0=). Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was recently published in Current Biology
+I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was recently published in Current Biology.
 
 ## Publications
 
-1. **"Flexible filtering by neural inputs supports motion computation across states and stimuli"** Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, [(Current Biology, 2021)](https://www.sciencedirect.com/science/article/pii/S0960982221013178) (\*equal contribution)
+1. [**"Flexible filtering by neural inputs supports motion computation across states and stimuli"**](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
 
-2. **“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”** Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman [(PNAS, 2016)](https://www.pnas.org/content/113/52/E8463/))
+2. [**“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”**](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, Jacob P. Portes, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
 
 
 ## Posters
