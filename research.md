@@ -13,10 +13,10 @@ I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.c
 ## Publications
 
 1. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
-[[article]](https://www.sciencedirect.com/science/article/pii/S0960982221013178) [[preprint]](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) [[code]](https://gitlab.com/rbehnialab/flexible-filtering)
+[[article]](/files/kohnportes2021.pdf) [[preprint]](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) [[code]](https://gitlab.com/rbehnialab/flexible-filtering)
 
-2. [*“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”*](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
-[[article]](/files/ma.pdf)
+2. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
+[[article]](/files/ma2016.pdf)
 
 
 ## Posters
