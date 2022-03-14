@@ -20,6 +20,7 @@ Many different systems can be thought of as filters, and formal filter analysis/
 
 
 ![Low Pass High Pass](/images/LowPassHighPass-image.jpg)
+
 *(Left) Original Image (Center) Image after applying a low pass filter (a.k.a blur) (Right) Image after applying a high pass filter (a.k.a sharpen)*
 
 ## Linear Filters
