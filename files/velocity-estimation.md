@@ -101,6 +101,7 @@ This is more robust than equation \ref{eqn: v}, since $I_x$ and $I_xx$ are not u
 
 
 ![motionenergy](/images/motionenergy.png)
+
 *Motion-Energy model with spatiotemporal filters chosen as first and second order gaussian derivatives. This is from Figure 8.8 in* **Visual Perception** *(page 224)*
 
 

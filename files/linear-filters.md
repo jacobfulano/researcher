@@ -13,6 +13,7 @@ Many different systems can be thought of as filters, and formal filter analysis/
 
 
 ![lowpass](/images/lowpasshighpass.jpg)
+
 *Low Pass and High Pass Filters in Frequency Space. The x-axis is frequency (Hz)*
 
 
