@@ -4,15 +4,15 @@ layout: default
 
 ## Research
 
-_Motor Control_
+**Motor Control**
 
 I am currently working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
-_Efficient Machine Learning_
+**Efficient Machine Learning**
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on exotic learning rate schedules for speeding up neural network training.
 
-_The Fly Brain_
+**The Fly Brain**
 
 I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology.
 
