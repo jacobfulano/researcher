@@ -17,6 +17,7 @@ _The Fly Brain_
 I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology.
 
 Our work is summarized in this research talk:
+
 [<img src="/images/WWN_Talk2.png" alt="drawing"/>](https://www.youtube.com/watch?v=-qnnRwfesAY)
 
 Test
