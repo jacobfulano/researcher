@@ -20,12 +20,6 @@ Our work is summarized in this research talk:
 
 [<img class="center" src="/images/WWN_Talk2.png" alt="drawing"/>](https://www.youtube.com/watch?v=-qnnRwfesAY)
 
-Test
-
-<a href="https://www.youtube.com/watch?v=-qnnRwfesAY">
-  <img src="/images/WWN_Talk2.png" width="100px" alt="WWN_Talk">
-</a>
-
 -------
 
 ## Publications
