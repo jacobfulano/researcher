@@ -4,7 +4,11 @@ layout: default
 
 ## Research
 
+_Motor Control_
+
 I am currently working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
+
+_Efficient Machine Learning_
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on exotic learning rate schedules for speeding up neural network training.
 
