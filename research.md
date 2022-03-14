@@ -23,7 +23,7 @@ Our work is summarized in this research talk:
 Test
 
 <a href="https://www.youtube.com/watch?v=-qnnRwfesAY">
-  <img src="/images/WWN_Talk2.png" alt="WWN_Talk">
+  <img src="/images/WWN_Talk2.png" width="100px" alt="WWN_Talk">
 </a>
 
 -------
