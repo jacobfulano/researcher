@@ -10,7 +10,7 @@ I am currently working on biologically plausible learning in recurrent neural ne
 
 **Efficient Machine Learning**
 
-As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on exotic learning rate schedules for speeding up neural network training.
+As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost: [Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
 
 **The Fly Brain**
 
