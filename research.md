@@ -14,7 +14,7 @@ As a ML Research Intern at [MosaicML](https://mosaicml.com), I work on cyclic le
 
 **The Fly Brain**
 
-I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology.
+I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology. Here is a Current Biology "Dispatch" that summarizes this work: [Motion vision: Pinning down motion computation in an ever-changing circuit](https://www.sciencedirect.com/science/article/pii/S0960982221013567)
 
 Our work is summarized in this research talk:
 
@@ -29,6 +29,11 @@ Our work is summarized in this research talk:
 
 2. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
 [[article]](/files/ma2016.pdf)
+
+
+## Preprints
+
+1. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
 
 
 ## Posters
