@@ -37,7 +37,7 @@ Our work is summarized in this research talk:
 
 ## Preprints
 
-1. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray [[preprint]](https://arxiv.org/pdf/2206.13448.pdf)
+1. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
 
 2. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
 
