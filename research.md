@@ -6,24 +6,28 @@ layout: default
 
 **Efficient Machine Learning**
 
-I currently work on efficient machine learning for large language models.
+I currently work on efficient machine learning for large language models. Stay tuned!
 
-As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost: [Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs)
+As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost ["Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules"](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs).
 
 **Brain Machine Interfaces and Biological Learning Rules**
 
-I recently worked on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
+I recently worked on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James M. Murray](https://murraylab.uoregon.edu/).
 
-How does neural activity change during motor learning, and what does it say about the underlying mechanisms? In our recent preprint ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448), we derive a metric to distinguish between learning rules by observing changes in neural activity during learning, given that the mapping from brain to behavior is known by the experimenter. Because brain-machine interface (BMI) experiments allow for perfect knowledge of this mapping, we focus on modeling a cursor-control BMI task using recurrent neural networks, showing that learning rules can be distinguished in simulated experiments using only observations that a neuroscience experimenter would plausibly have access to.
+How does neural activity change during motor learning, and what does it say about the underlying mechanisms? In our recent NeurIPS 2022 paper ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448), we derive a metric to distinguish between learning rules by observing changes in neural activity during learning, given that the mapping from brain to behavior is known by the experimenter. Because brain-machine interface (BMI) experiments allow for perfect knowledge of this mapping, we focus on modeling a cursor-control BMI task using recurrent neural networks, showing that learning rules can be distinguished in simulated experiments using only observations that a neuroscience experimenter would plausibly have access to.
 
 
 **The Fly Brain**
 
-I recently finished a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology. Here is a Current Biology "Dispatch" that summarizes this work: [Motion vision: Pinning down motion computation in an ever-changing circuit](https://www.sciencedirect.com/science/article/pii/S0960982221013567)
+During my PhD, I worked on a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology. Here is a Current Biology "Dispatch" that summarizes this work: [Motion vision: Pinning down motion computation in an ever-changing circuit](https://www.sciencedirect.com/science/article/pii/S0960982221013567)
 
 Our work is summarized in this research talk:
 
 [<img class="center" src="/images/WWN_Talk2.png" alt="drawing"/>](https://www.youtube.com/watch?v=-qnnRwfesAY)
+
+Some of my pre-PhD work in the [Hillman Lab](https://hillmanlab.zuckermaninstitute.columbia.edu/) investigated patterns of neural activation and blood flow (i.e. neurovascular coupling) in the rodent cortex.
+
+In a previous life, I wrote a review-style [master's thesis on superconducting qubits]((/files/decoherence-superconducting-qubitsWEBv2.pdf)) for quantum computing.
 
 -------
 
