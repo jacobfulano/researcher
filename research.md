@@ -4,17 +4,18 @@ layout: default
 
 ## Research
 
+**Efficient Machine Learning**
+
+I currently work on efficient machine learning for large language models (see the [MosaicML Blog](https://www.mosaicml.com/blog)).
+
+As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost: [Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs)
+
 **Brain Machine Interfaces and Biological Learning Rules**
 
 I am currently working on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James Murray](https://murraylab.uoregon.edu/).
 
 How does neural activity change during motor learning, and what does it say about the underlying mechanisms? In our recent preprint ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448), we derive a metric to distinguish between learning rules by observing changes in neural activity during learning, given that the mapping from brain to behavior is known by the experimenter. Because brain-machine interface (BMI) experiments allow for perfect knowledge of this mapping, we focus on modeling a cursor-control BMI task using recurrent neural networks, showing that learning rules can be distinguished in simulated experiments using only observations that a neuroscience experimenter would plausibly have access to.
 
-
-
-**Efficient Machine Learning**
-
-As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost: [Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this preprint [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://arxiv.org/pdf/2206.00832.pdf)
 
 **The Fly Brain**
 
