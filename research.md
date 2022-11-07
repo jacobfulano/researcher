@@ -35,16 +35,17 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 1. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray (NeurIPS 2022) [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
 
-2. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
+2. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
+
+3. ["Flexible Computation in Neural Circuits"](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20) Jacob P. Portes (PhD Thesis, 2022)
+[[dissertation]](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20)
+
+4. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
 [[article]](/files/kohnportes2021.pdf) [[preprint]](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) [[code]](https://gitlab.com/rbehnialab/flexible-filtering)
 
-3. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
+5. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
 [[article]](/files/ma2016.pdf)
 
-
-## Workshop Papers
-
-1. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
 
 
 ## Posters
