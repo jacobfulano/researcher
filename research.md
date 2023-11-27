@@ -4,9 +4,13 @@ layout: default
 
 ## Research
 
-**Efficient Machine Learning**
+**LLM Research**
 
-I currently work on efficient machine learning for large language models. Stay tuned!
+I am currently working on LLM pretraining and finetuning. MosaicML x Databricks is committed to open source research in the form of blog posts and research papers. As a Research Scientist at MosaicML (now Databricks), I am part of the research team that pretrained and finetuned the open-source large language models [MPT-7B](https://www.mosaicml.com/blog/mpt-7b) and [MPT-30B](https://www.mosaicml.com/blog/mpt-30b).
+
+I recently had the privilege of working with [Aditi Jha](https://aditijha7.com/) on fine-tuning LLMs: ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) (NeurIPS 2023 Workshop). In this paper we explored how many instruction tuning samples are necessary to achieve good performance on both traditional NLP benchmarks as well as with model-based evaluation paradigms.
+
+Back when the MosaicML NLP team consisted of only 9 researchers, we did some work on optimizing BERT pretraining. Here is our detailed [blog post](https://www.mosaicml.com/blog/mosaicbert) and report: ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) (NeurIPS 2023). We used a lot of the insights from this work to build MPT-7B and MPT-30B.
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost ["Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules"](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs).
 
@@ -31,11 +35,13 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 -------
 
-## LLM Work
+## LLM Research
 
 [Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs](https://www.mosaicml.com/blog/mpt-7b)
 
 [MPT-30B: Raising the bar for open-source foundation models](https://www.mosaicml.com/blog/mpt-30b)
+
+["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133)
 
 ## Publications
 
