@@ -6,7 +6,9 @@ layout: default
 
 **LLM Research**
 
-I am currently working on LLM pretraining and finetuning. MosaicML x Databricks is committed to open source research in the form of blog posts and research papers. As a Research Scientist at MosaicML (now Databricks), I am part of the research team that pretrained and finetuned the open-source large language models [MPT-7B](https://www.mosaicml.com/blog/mpt-7b) and [MPT-30B](https://www.mosaicml.com/blog/mpt-30b).
+I am currently working on LLM pretraining and finetuning on the MosaicML team at Databricks. 
+
+As a Research Scientist at MosaicML, I was part of the team that pretrained and finetuned the open-source large language models [MPT-7B](https://www.mosaicml.com/blog/mpt-7b) and [MPT-30B](https://www.mosaicml.com/blog/mpt-30b).
 
 I recently had the privilege of working with [Aditi Jha](https://aditijha7.com/) on fine-tuning LLMs: ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) (NeurIPS 2023 Workshop). In this paper we explored how many instruction tuning samples are necessary to achieve good performance on both traditional NLP benchmarks as well as with model-based evaluation paradigms.
 
