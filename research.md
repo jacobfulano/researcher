@@ -12,14 +12,14 @@ As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic 
 
 **Brain Machine Interfaces and Biological Learning Rules**
 
-I recently worked on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James M. Murray](https://murraylab.uoregon.edu/).
+During my PhD I worked on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James M. Murray](https://murraylab.uoregon.edu/).
 
 How does neural activity change during motor learning, and what does it say about the underlying mechanisms? In our recent NeurIPS 2022 paper ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448), we derive a metric to distinguish between learning rules by observing changes in neural activity during learning, given that the mapping from brain to behavior is known by the experimenter. Because brain-machine interface (BMI) experiments allow for perfect knowledge of this mapping, we focus on modeling a cursor-control BMI task using recurrent neural networks, showing that learning rules can be distinguished in simulated experiments using only observations that a neuroscience experimenter would plausibly have access to.
 
 
 **The Fly Brain**
 
-During my PhD, I worked on a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology. Here is a Current Biology "Dispatch" that summarizes this work: [Motion vision: Pinning down motion computation in an ever-changing circuit](https://www.sciencedirect.com/science/article/pii/S0960982221013567)
+For a large part of my PhD, I worked on a project with [Rudy Behnia](http://behnialab.neuroscience.columbia.edu/), [Larry Abbott](https://zuckermaninstitute.columbia.edu/larry-f-abbott-phd) and [Jessica Kohn](http://behnialab.neuroscience.columbia.edu/people/) on the neural computation of motion in *Drosophila* eyes. Our paper ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) was published in Current Biology. Here is a Current Biology "Dispatch" that summarizes this work: [Motion vision: Pinning down motion computation in an ever-changing circuit](https://www.sciencedirect.com/science/article/pii/S0960982221013567)
 
 Our work is summarized in this research talk:
 
@@ -31,19 +31,29 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 -------
 
+## LLM Work
+
+[Introducing MPT-7B: A New Standard for Open-Source, Commercially Usable LLMs](https://www.mosaicml.com/blog/mpt-7b)
+
+[MPT-30B: Raising the bar for open-source foundation models](https://www.mosaicml.com/blog/mpt-30b)
+
 ## Publications
 
-1. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray (NeurIPS 2022) [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
+1. ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) Aditi Jha, Sam Havens, Jeremey Dohmann, Alex Trott, Jacob Portes (NeurIPS 2023 Workshop)
 
-2. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
+2. ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) Jacob Portes, Alexander R Trott, Sam Havens, DANIEL KING, Abhinav Venigalla, Moin Nadeem, Nikhil Sardana, Daya Khudia, Jonathan Frankle (NeurIPS 2023)
 
-3. ["Flexible Computation in Neural Circuits"](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20) Jacob P. Portes (PhD Thesis, 2022)
+3. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray (NeurIPS 2022) [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
+
+4. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
+
+5. ["Flexible Computation in Neural Circuits"](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20) Jacob P. Portes (PhD Thesis, 2022)
 [[dissertation]](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20)
 
-4. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
+6. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
 [[article]](/files/kohnportes2021.pdf) [[preprint]](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) [[code]](https://gitlab.com/rbehnialab/flexible-filtering)
 
-5. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
+7. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
 [[article]](/files/ma2016.pdf)
 
 
