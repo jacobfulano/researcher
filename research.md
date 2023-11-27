@@ -16,9 +16,8 @@ Back when the MosaicML NLP team consisted of only 9 researchers, we did some wor
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost ["Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules"](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs).
 
-Here's an overview of some of MosaicML's early research:
+This [talk by Jonathan Frankle](https://www.youtube.com/watch?v=HBHeYNlNPIw) gives an overview of some of MosaicML's early research.
 
-[<img class="center" src="/images/frankle_talk.png" alt="drawing"/>](https://www.youtube.com/watch?v=HBHeYNlNPIw)
 
 **Brain Machine Interfaces and Biological Learning Rules**
 
@@ -47,7 +46,7 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 [MPT-30B: Raising the bar for open-source foundation models](https://www.mosaicml.com/blog/mpt-30b)
 
-["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133)
+[LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms](https://arxiv.org/abs/2311.13133)
 
 ## Publications
 
