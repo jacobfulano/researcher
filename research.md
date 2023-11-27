@@ -50,7 +50,7 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 ## Publications
 
-1. ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) Aditi Jha, Sam Havens, Jeremey Dohmann, Alex Trott, Jacob Portes (NeurIPS 2023 Workshop)
+1. ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) Aditi Jha, Sam Havens, Jeremey Dohmann, Alex Trott, Jacob Portes (NeurIPS 2023 Workshop) [[preprint]](https://arxiv.org/pdf/2311.13133.pdf) [[website]](https://97aditi.github.io/LIMIT/) [[code]](https://github.com/97aditi/LIMIT-Less-is-more-for-instruction-tuning)
 
 2. ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) Jacob Portes, Alexander R Trott, Sam Havens, DANIEL KING, Abhinav Venigalla, Moin Nadeem, Nikhil Sardana, Daya Khudia, Jonathan Frankle (NeurIPS 2023)
 
