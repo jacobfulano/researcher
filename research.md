@@ -16,6 +16,10 @@ Back when the MosaicML NLP team consisted of only 9 researchers, we did some wor
 
 As a ML Research Intern at [MosaicML](https://mosaicml.com), I worked on cyclic learning rate schedules for estimating training efficiency. Our work is summarized in this blogpost ["Efficiently Estimating Pareto Frontiers with Cyclic Learning Rate Schedules"](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers) and this workshop paper [Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates](https://openreview.net/forum?id=Uad23IcIEs).
 
+Here's an overview of some of MosaicML's early research:
+
+[<img class="center" src="/images/frankle_talk.png" alt="drawing"/>](https://www.youtube.com/watch?v=HBHeYNlNPIw)
+
 **Brain Machine Interfaces and Biological Learning Rules**
 
 During my PhD I worked on biologically plausible learning in recurrent neural networks (RNNs), reinforcement learning (RL), and motor control with [James M. Murray](https://murraylab.uoregon.edu/).
