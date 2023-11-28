@@ -4,7 +4,7 @@ layout: default
 
 <img class="profile-picture" src="image.jpeg">
 
-I am a machine learning research scientist in the MosaicML team at Databricks.
+I am a machine learning research scientist on the MosaicML team at Databricks.
 
 I am broadly interested in developing experimentally motivated, mathematically grounded theories of both artificial and biological neural networks. I did my PhD in the [Center for Theoretical Neuroscience](https://ctn.zuckermaninstitute.columbia.edu/) at Columbia University. After my PhD, I was a Research Scientist at [MosaicML](https://www.mosaicml.com/), which got acquired by Databricks in July 2023.
 
