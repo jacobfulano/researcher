@@ -6,7 +6,7 @@ layout: default
 
 **LLM Research**
 
-I am currently working on LLM pretraining, finetuning and retrieval on the Mosaic research team at Databricks. 
+I am currently working on LLM pretraining, finetuning, and retrieval on the Mosaic research team at Databricks. 
 
 As a Research Scientist at MosaicML, I was part of the team that pretrained and finetuned the open-source large language models [MPT-7B](https://www.mosaicml.com/blog/mpt-7b) and [MPT-30B](https://www.mosaicml.com/blog/mpt-30b) and [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm).
 
