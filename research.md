@@ -6,11 +6,11 @@ layout: default
 
 **LLM Research**
 
-I am currently working on LLM pretraining and finetuning on the MosaicML team at Databricks. 
+I am currently working on LLM pretraining, finetuning and retrieval on the Mosaic research team at Databricks. 
 
 As a Research Scientist at MosaicML, I was part of the team that pretrained and finetuned the open-source large language models [MPT-7B](https://www.mosaicml.com/blog/mpt-7b) and [MPT-30B](https://www.mosaicml.com/blog/mpt-30b) and [DBRX](https://www.databricks.com/blog/introducing-dbrx-new-state-art-open-llm).
 
-I recently had the privilege of working with [Aditi Jha](https://aditijha7.com/) on fine-tuning LLMs: ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) (NeurIPS 2023 Workshop). In this paper we explored how many instruction tuning samples are necessary to achieve good performance on both traditional NLP benchmarks as well as with model-based evaluation paradigms.
+Some recent projects include ["LoRA Learns Less and Forgets Less"](https://arxiv.org/abs/2405.09673) with [Dan Biderman](https://dan-biderman.netlify.app/), ["Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws"](https://openreview.net/forum?id=0bmXrtTDUu) with Nikhil Sardana, and ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) (NeurIPS 2023 Workshop) with [Aditi Jha](https://aditijha7.com/). 
 
 Back when the MosaicML NLP team consisted of only 9 researchers, we did some work on optimizing BERT pretraining. Here is our detailed [blog post](https://www.mosaicml.com/blog/mosaicbert) and report: ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) (NeurIPS 2023). We used a lot of the insights from this work to build MPT-7B and MPT-30B.
 
@@ -54,44 +54,28 @@ In a previous life, I wrote a review-style [master's thesis on superconducting q
 
 1. ["LoRA Learns Less and Forgets Less"](https://arxiv.org/abs/2405.09673) Dan Biderman, Jose Gonzalez Ortiz, Jacob Portes, Mansheej Paul, Philip Greengard, Connor Jennings, Daniel King, Sam Havens, Vitaliy Chiley, Jonathan Frankle, Cody Blakeney, John P. Cunningham [[preprint]](https://arxiv.org/pdf/2405.09673)
 
-2. ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) Aditi Jha, Sam Havens, Jeremey Dohmann, Alex Trott, Jacob Portes (NeurIPS 2023 Workshop) [[preprint]](https://arxiv.org/pdf/2311.13133.pdf) [[website]](https://97aditi.github.io/LIMIT/) [[code]](https://github.com/97aditi/LIMIT-Less-is-more-for-instruction-tuning)
+2. ["Beyond Chinchilla-Optimal: Accounting for Inference in Language Model Scaling Laws"](https://openreview.net/forum?id=0bmXrtTDUu) Nikhil Sardana, Jacob Portes, Sasha Doubov, Jonathan Frankle (ICML 2024) [[paper]](https://arxiv.org/abs/2401.00448)
 
-3. ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) Jacob Portes, Alexander R Trott, Sam Havens, DANIEL KING, Abhinav Venigalla, Moin Nadeem, Nikhil Sardana, Daya Khudia, Jonathan Frankle (NeurIPS 2023)
+3. ["LIMIT: Less Is More for Instruction Tuning Across Evaluation Paradigms"](https://arxiv.org/abs/2311.13133) Aditi Jha, Sam Havens, Jeremey Dohmann, Alex Trott, Jacob Portes (NeurIPS 2023 Workshop) [[preprint]](https://arxiv.org/pdf/2311.13133.pdf) [[website]](https://97aditi.github.io/LIMIT/) [[code]](https://github.com/97aditi/LIMIT-Less-is-more-for-instruction-tuning)
 
-4. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray (NeurIPS 2022) [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
+4. ["MosaicBERT: A Bidirectional Encoder Optimized for Fast Pretraining"](https://openreview.net/forum?id=5zipcfLC2Z) Jacob Portes, Alexander R Trott, Sam Havens, DANIEL KING, Abhinav Venigalla, Moin Nadeem, Nikhil Sardana, Daya Khudia, Jonathan Frankle (NeurIPS 2023)
 
-5. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
+5. ["Distinguishing Learning Rules with Brain Machine Interfaces"](https://arxiv.org/abs/2206.13448) Jacob P. Portes, Christian Schmid, James M. Murray (NeurIPS 2022) [[preprint]](https://arxiv.org/pdf/2206.13448.pdf) [[code]](https://github.com/jacobfulano/learning-rules-with-bmi)
 
-6. ["Flexible Computation in Neural Circuits"](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20) Jacob P. Portes (PhD Thesis, 2022)
+6. ["Fast Benchmarking of Accuracy vs. Training Time with Cyclic Learning Rates"](https://arxiv.org/abs/2206.00832) Jacob Portes, Davis Blalock, Cory Stephenson, Jonathan Frankle ("Has it Trained Yet?" NeurIPS 2022 Workshop) [[paper]](https://openreview.net/forum?id=Uad23IcIEs) [[preprint]](https://arxiv.org/pdf/2206.00832.pdf) [[blogpost]](https://www.mosaicml.com/blog/efficiently-estimating-pareto-frontiers)
+
+7. ["Flexible Computation in Neural Circuits"](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20) Jacob P. Portes (PhD Thesis, 2022)
 [[dissertation]](https://academiccommons.columbia.edu/doi/10.7916/h0nh-fa20)
 
-7. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
+8. ["Flexible filtering by neural inputs supports motion computation across states and stimuli"](https://www.sciencedirect.com/science/article/pii/S0960982221013178) Jessica R. Kohn\*, Jacob P. Portes\*, Matthias P. Christenson, LF Abbott, Rudy Behnia, (Current Biology, 2021) (\*equal contribution)
 [[article]](/files/kohnportes2021.pdf) [[preprint]](https://www.biorxiv.org/content/10.1101/2021.04.17.440267v1) [[code]](https://gitlab.com/rbehnialab/flexible-filtering)
 
-8. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
+9. [“Resting-state hemodynamics are spatiotemporally coupled to synchronized and symmetric neural activity in excitatory neurons”](https://www.pnas.org/content/113/52/E8463/) Ying Ma, Mohammed A. Shaik, Mariel G. Kozberg, Sharon H. Kim, <ins>Jacob P. Portes</ins>, Dmitriy Timmerman, Elizabeth M.C. Hillman (PNAS, 2016)
 [[article]](/files/ma2016.pdf)
 
 
 
-## Posters
 
-1. *"Distinguishing Learning Rules with Brain Machine Interfaces"* [NeurIPS (November 2022)](https://neurips.cc/virtual/2022/papers.html?filter=authors&search=Portes) Jacob P. Portes, Christian Schmid, James M. Murray
-
-2. *"Flexible filtering by neural inputs supports motion computation across stimuli and states"* [CSHL Drosophila Neurobiology (October 2021)](https://meetings.cshl.edu/posters/dros21/virtualposters.aspx) Jacob Portes\*, Jessica Kohn\*, Matthias Christenson, Larry Abbott, Rudy Behnia (*equal contribution)
-
-3. *"Neural signatures of supervised learning vs. reinforcement learning in brain-machine interface tasks"* [Cosyne (February 2021)](http://www.cosyne.org/c/index.php?title=Cosyne2021_Program) Jacob Portes, James Murray
-
-4.	*“An Anatomically and Functionally Constrained Model of Direction Selectivity in Drosophila”* Cosyne (February 2020) Jacob Portes\*, Jessica Kohn\*, Larry Abbott, Rudy Behnia (*equal contribution)
-
-5.	*“The effect of locomotion-induced octopamine release on motion detection circuits in Drosophila”* Society for Neuroscience (November 2017) Jessica Kohn, Jacob Portes, Rudy Behnia.
-
-6.	*“Historical analysis of the role of theory in the development of neuroscience”* Society for Neuroscience Theme J - History Poster (November 2016) J. Portes
-
-7.	*“The effects of endothelial dysfunction on neuronal activity, hemodynamics and neurovascular coupling”* Society for Neuroscience (November 2015) Mohammed A. Shaik, Jacob P. Portes, Sharon H. Kim, Elizabeth M. C. Hillman
-
-8.	*“A new nonlinear model of the fMRI BOLD response”* Society for Neuroscience (November 2014) Jacob P. Portes, Cyrus B. Amoozegar, Brenda R. Chen, Mariel G. Kozberg, Mohammed A. Shaik, Elizabeth M.C. Hillman
-
-9.	*“A new nonlinear model of the fMRI BOLD response”* General Electric (GE) Student Research Summit Talk and Poster (August 2014) Jacob P. Portes, Cyrus B. Amoozegar, Brenda R. Chen, Mariel G. Kozberg, Mohammed A. Shaik, Elizabeth M.C. Hillman
 
 ## Master's Thesis
 
